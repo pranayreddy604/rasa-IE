@@ -1,0 +1,517 @@
+version: "3.1"
+
+nlu:
+  - intent: get
+    examples: |
+      - list all from [accounts]{"entity":"tablename"}
+      - list from [accounts]{"entity":"tablename"}
+      - list [accounts]{"entity":"tablename"}
+      - get all [accounts]{"entity":"tablename"}
+      - get from  [account]{"entity":"tablename"}
+      - get everything from [account]{"entity":"tablename"}
+      - get [account]{"entity":"tablename"}
+      - from [account]{"entity":"tablename"} get all
+      - from [account]{"entity":"tablename"} get everything
+      - list all from [leads]{"entity":"tablename"}
+      - list from [leads]{"entity":"tablename"}
+      - list [leads]{"entity":"tablename"}
+      - get all [leads]{"entity":"tablename"}
+      - get from  [leads]{"entity":"tablename"}
+      - get everything from [lead]{"entity":"tablename"}
+      - get [lead]{"entity":"tablename"}
+      - from [lead]{"entity":"tablename"} get all
+      - from [lead]{"entity":"tablename"} get everything
+      - list all from [contact]{"entity":"tablename"}
+      - list from [contact]{"entity":"tablename"}
+      - list [contact]{"entity":"tablename"}
+      - get all [contact]{"entity":"tablename"}
+      - get from  [contact]{"entity":"tablename"}
+      - get everything from [contact]{"entity":"tablename"}
+      - get [contact]{"entity":"tablename"}
+      - from [contact]{"entity":"tablename"}{"entity":"tablename"} get all
+      - from [contact]{"entity":"tablename"} get everything
+      - list all from [opportunity]{"entity":"tablename"}
+      - list from [opportunity]{"entity":"tablename"}
+      - list [opportunity]{"entity":"tablename"}
+      - get all [opportunity]{"entity":"tablename"}
+      - get from  [opportunity]{"entity":"tablename"}
+      - get everything from [opportunity]{"entity":"tablename"}
+      - get [opportunity]{"entity":"tablename"}
+      - from [opportunity]{"entity":"tablename"} get all
+      - from [opportunity]{"entity":"tablename"} get everything
+
+  - intent: create_lead
+    examples: |
+      - create a [leads]{"entity":"tablename"} with name [Sohan Reddy]{"entity":"fullname"} and company [sysy]{"entity":"companyname"}.
+      - Generate a [leads]{"entity":"tablename"} record for an individual named [Amara Nair]{"entity":"fullname"} and associated with the company [aaa]{"entity":"companyname"}
+      - Generate a [leads]{"entity":"tablename"} for the company [aaabb]{"entity":"companyname"} with the name [Amara Iyer]{"entity":"fullname"}.
+      - Record a potential [leads]{"entity":"tablename"} named [ram Sharma]{"entity":"fullname"} and associated with company [ccc]{"entity":"companyname"} as a [lead]{"entity":"tablename"}.
+      - Add [ravi Desai]{"entity":"fullname"} and from the company [microsoft]{"entity":"companyname"} to the [lead]{"entity":"tablename"}s database.
+      - Register a new [leads]{"entity":"tablename"} in the system for [Aarav Krishnan]{"entity":"fullname"} and for the company [microsoft]{"entity":"companyname"}.
+      - Create a record for a potential [lead]{"entity":"tablename"} with the name [Advaita shastri]{"entity":"fullname"} and from company [microsoft]{"entity":"companyname"}.
+      - Add a new potential [lead]{"entity":"tablename"} to the system for from company [microsoft]{"entity":"companyname"} with the name [Alisha Mehta]{"entity":"fullname"}.
+      - Record [Amara Jain]{"entity":"fullname"} and their from the company [oracle]{"entity":"companyname"} as a [lead]{"entity":"tablename"} in the database.
+      - Generate a [lead]{"entity":"tablename"} record for [Anaya Gupta]{"entity":"fullname"} and from company [oracle]{"entity":"companyname"}.
+      - Enter [phoenix george]{"entity":"fullname"} and from the company [oracle]{"entity":"companyname"} as a new [lead]{"entity":"tablename"} in the system.
+      - Record a [lead]{"entity":"tablename"} in the system for [Anika Patel]{"entity":"fullname"} and the from the company[oracle]{"entity":"companyname"}.
+      - Add a [lead]{"entity":"tablename"} to the database for [Anjali Martinez]{"entity":"fullname"} from the from company [nineleaps]{"entity":"companyname"}.
+      - Create a new [leads]{"entity":"tablename"} in the system with the name [yuvi Phillips]{"entity":"fullname"} and from company [nineleaps]{"entity":"companyname"}.
+      - Register [Aryan Gonzalez]{"entity":"fullname"} and the from company [nineleaps]{"entity":"companyname"} as a potential [lead]{"entity":"tablename"} in the system.
+      - Enter a new [lead]{"entity":"tablename"} into the database with the name [Avikar Hill]{"entity":"fullname"} and from the company [ABC]{"entity":"companyname"}.
+      - Add a potential [lead]{"entity":"tablename"} record for [sachin tendulkar]{"entity":"fullname"} and from company [ABC]{"entity":"companyname"} to the [lead]{"entity":"tablename"}s database.
+      - Create a [lead]{"entity":"tablename"} record in the system for [Dhruv Lee]{"entity":"fullname"} and from company [netflix]{"entity":"companyname"}.
+      - Record a new [lead]{"entity":"tablename"} in the system for [Esha Rodriguez]{"entity":"fullname"} and their from company [netflix]{"entity":"companyname"}.
+      - Add [Gayatri Wilson]{"entity":"fullname"} and the from the company [netflix]{"entity":"companyname"} to the database as a [lead]{"entity":"tablename"}.
+      - Register a [lead]{"entity":"tablename"} for [virat kohli]{"entity":"fullname"} and from company [bfjksd]{"entity":"companyname"} in the system.
+      - Add a [lead]{"entity":"tablename"} from company [ABC]{"entity":"companyname"} from with the name [Harshita Perez]{"entity":"fullname"}.
+      - Create a new [leads]{"entity":"tablename"} record for [Ishita Davis]{"entity":"fullname"} in from company [ABC]{"entity":"companyname"}.
+      - Record a [leads]{"entity":"tablename"} with  name [Jai Young]{"entity":"fullname"}, and from company [amazon]{"entity":"companyname"}.
+      - Enter a new [leads]{"entity":"tablename"} for the company [wipro]{"entity":"companyname"} organization, with the name [Kavya White]{"entity":"fullname"}.
+      - Register a [leads]{"entity":"tablename"} with  name [Keya Jackson]{"entity":"fullname"}, and from company [nineleaps]{"entity":"companyname"}.
+      - Initiate a [leads]{"entity":"tablename"} creation process for [Kiara diaz]{"entity":"fullname"}, who belongs to [cgi]{"entity":"companyname"} company.
+      - Begin the [leads]{"entity":"tablename"} generation process for a person named [Krish Moore]{"entity":"fullname"}, who works for company called [adobe]{"entity":"companyname"}.
+      - Make a new [leads]{"entity":"tablename"} entry for [Leela Scott]{"entity":"fullname"} and assign him to from company [keka]{"entity":"companyname"}.
+      - Log a new [leads]{"entity":"tablename"} with the name [Manav Lewis]{"entity":"fullname"} and the company [grow]{"entity":"companyname"}.
+      - Create a new [leads]{"entity":"tablename"} of the company [iifl]{"entity":"companyname"}'s database for [Maya Johnson]{"entity":"fullname"}.
+      - Set up a new [leads]{"entity":"tablename"} with  name [Mira Taylor]{"entity":"fullname"}, and company [xerox]{"entity":"companyname"}.
+      - Establish a [leads]{"entity":"tablename"} for [Naveen Wright]{"entity":"fullname"} under the company [vedanta]{"entity":"companyname"} company.
+      - Generate a new [lead]{"entity":"tablename"} with the name [Neha Gonzalez]{"entity":"fullname"} and assign him to the company [byjus]{"entity":"companyname"}.
+      - Generate a [lead]{"entity":"tablename"} with  name [Niharika Martinez]{"entity":"fullname"}, and company name [black rock]{"entity":"companyname"}.
+      - Open a new [lead]{"entity":"tablename"} with the name [Om Cooper]{"entity":"fullname"} and the company [rasa]{"entity":"companyname"}.
+      - Start a [lead]{"entity":"tablename"} creation process for [Pooja Robinson]{"entity":"fullname"} who belongs to the company [meta]{"entity":"companyname"} company.
+      - Create a new [lead]{"entity":"tablename"} with  name [Pranav Anderson]{"entity":"fullname"}, and company [upstocks]{"entity":"companyname"}.
+      - Add a new [lead]{"entity":"tablename"} with the name [Radhika Thompson]{"entity":"fullname"} to the company [spry]{"entity":"companyname"} company's list.
+      - Produce a new [lead]{"entity":"tablename"} entry for [Rajan Jackson]{"entity":"fullname"} who belongs to the company [uber]{"entity":"companyname"} corporation.
+      - Create a [lead]{"entity":"tablename"} with  name [Olivia Kim]{"entity":"fullname"}, and association with company [flipkart]{"entity":"companyname"}.
+      - Add a [lead]{"entity":"tablename"} with the name [Rhea Brown]{"entity":"fullname"} and the company [meesho]{"entity":"companyname"} to the database.
+      - Fill out a [lead]{"entity":"tablename"} form for [Rohit Garcia]{"entity":"fullname"} and assign him to the company [LG]{"entity":"companyname"}.
+      - Create a new [lead]{"entity":"tablename"} for [Roshni watson]{"entity":"fullname"} and associate him with the company [samsung]{"entity":"companyname"} organization.
+      - Add a new [lead]{"entity":"tablename"} with the name [Ruhi Hernandez]{"entity":"fullname"} to the company [slack]{"entity":"companyname"} company's customer list.
+      - Make a new [lead]{"entity":"tablename"} for [Sahil mikelson]{"entity":"fullname"} and put him in the from company [teams]{"entity":"companyname"} organization.
+      - Enter a [lead]{"entity":"tablename"} with  name [Sakshi salvatore]{"entity":"fullname"}, and company name [lenovo]{"entity":"companyname"}.
+      - Generate a [lead]{"entity":"tablename"} for [Sanjana gilbert]{"entity":"fullname"} with the company [hp]{"entity":"companyname"}.
+      - Record a new [lead]{"entity":"tablename"} with the name [Shaan donnavan]{"entity":"fullname"} from the company [bpl]{"entity":"companyname"} company.
+      - Create a [lead]{"entity":"tablename"} for [Tyler bhargav]{"entity":"fullname"} and assign him to the company [sbi]{"entity":"companyname"} organization.
+      - Set up a new [lead]{"entity":"tablename"} for [Shaili Gupta]{"entity":"fullname"}, who works at company [union bnk]{"entity":"companyname"}.
+      - Start a new [lead]{"entity":"tablename"} entry for [Shiv Shah]{"entity":"fullname"} and associate him with the company [jp morgan chase]{"entity":"companyname"}.
+      - Add a new [lead]{"entity":"tablename"} with the name [Shreya Rao]{"entity":"fullname"} to the company [wells fargo]{"entity":"companyname"} corporation's list.
+      - Log a [lead]{"entity":"tablename"} for [Simran Singh]{"entity":"fullname"} and add him to the company [goldman sachs]{"entity":"companyname"} company.
+      - Create a [lead]{"entity":"tablename"} with  name [Sneha Menon]{"entity":"fullname"}, and with company [tesco]{"entity":"companyname"}.
+      - Generate a new [lead]{"entity":"tablename"} with the name [Sohan Forbez]{"entity":"fullname"} and the company [puma]{"entity":"companyname"}.
+      - Create a new [lead]{"entity":"tablename"} for [Caroline Patel]{"entity":"fullname"} and register him with the company [ITC]{"entity":"companyname"} organization.
+      - Add a [lead]{"entity":"tablename"} with the name [Shreya Rao]{"entity":"fullname"} from company [wells fargo]{"entity":"companyname"} .
+      - Add [sai Ram]{"entity":"fullname"} and the company [HUL]{"entity":"companyname"} to the [leads]{"entity":"tablename"}  database.
+      - create a [leads]{"entity":"tablename"} with name [Soha Re]{"entity":"fullname"} and from  company [gdg]{"entity":"companyname"}.
+      - Generate a [leads]{"entity":"tablename"} record for an individual named [Ar Nai]{"entity":"fullname"} and associated with the company [pqr llc]{"entity":"companyname"}
+      - Generate a [leads]{"entity":"tablename"} for the from [google llc]{"entity":"companyname"} with the company [Aa Iyr]{"entity":"fullname"}.
+      - Record a potential [leads]{"entity":"tablename"} named [rm ma]{"entity":"fullname"} and associated with company [google llc]{"entity":"companyname"} as a [lead]{"entity":"tablename"}.
+      - Add [raia i]{"entity":"fullname"} and the from company [microsoft]{"entity":"companyname"} to the [lead]{"entity":"tablename"}s database.
+      - Register a new [leads]{"entity":"tablename"} in the system for [Aara Knan]{"entity":"fullname"} and from company [microsoft]{"entity":"companyname"}.
+      - Create a record for a potential [lead]{"entity":"tablename"} with the name [Ata tri]{"entity":"fullname"} and from company [microsoft]{"entity":"companyname"}.
+      - Add a new potential [lead]{"entity":"tablename"} to the system for from company [microsoft]{"entity":"companyname"} with the name [Ala a]{"entity":"fullname"}.
+      - Record [Ara Jn]{"entity":"fullname"} and their from company [oracle]{"entity":"companyname"} as a [lead]{"entity":"tablename"} in the database.
+      - Generate a [lead]{"entity":"tablename"} record for [Aya Gupta]{"entity":"fullname"} and from the company [oracle]{"entity":"companyname"}.
+      - Enter [phnix gge]{"entity":"fullname"} and from company [oracle]{"entity":"companyname"} as a new [lead]{"entity":"tablename"} in the system.
+      - Record a [lead]{"entity":"tablename"} in the system for [Aika Pel]{"entity":"fullname"} and the from company [oracle]{"entity":"companyname"}.
+      - Add a [lead]{"entity":"tablename"} to the database for [Anli Minez]{"entity":"fullname"} from the of the  company [nineleaps]{"entity":"companyname"}.
+      - Create a new [leads]{"entity":"tablename"} in the system with the name [yvi Plips]{"entity":"fullname"} and company [nineleaps]{"entity":"companyname"}.
+      - Register [Aryan Glez]{"entity":"fullname"} and the company [nineleaps]{"entity":"companyname"} as a potential [lead]{"entity":"tablename"} in the system.
+      - Enter a new [lead]{"entity":"tablename"} into the database with the name [ikar Hll]{"entity":"fullname"} and company [ABC]{"entity":"companyname"}.
+      - Add a potential [lead]{"entity":"tablename"} record for [sachin tdulkr]{"entity":"fullname"} and company [ABC]{"entity":"companyname"} to the [lead]{"entity":"tablename"}s database.
+      - Create a [lead]{"entity":"tablename"} record in the system for [Duv Lee]{"entity":"fullname"} and company [netflix]{"entity":"companyname"}.
+      - Record a new [lead]{"entity":"tablename"} in the system for [Esa driguez]{"entity":"fullname"} and their company [netflix]{"entity":"companyname"}.
+      - Add [Gayf lson]{"entity":"fullname"} and the company [netflix]{"entity":"companyname"} to the database as a [lead]{"entity":"tablename"}.
+      - Register a [lead]{"entity":"tablename"} for [vat kli]{"entity":"fullname"} and company [google llc]{"entity":"companyname"} in the system.
+      - Add a [lead]{"entity":"tablename"} to the [ABC]{"entity":"companyname"} company with the name [Hshita ez]{"entity":"fullname"}.
+      - Create a new [leads]{"entity":"tablename"} record for [Iita vis]{"entity":"fullname"} in company [ABC]{"entity":"companyname"}.
+      - Record a [leads]{"entity":"tablename"} with  name [Ji Yo]{"entity":"fullname"}, and company [amazon]{"entity":"companyname"}.
+      - Enter a new [leads]{"entity":"tablename"} for the [wipro]{"entity":"companyname"} organization, with the name [vyahite]{"entity":"fullname"}.
+      - Register a [leads]{"entity":"tablename"} with  name [Ka Jaon]{"entity":"fullname"}, and company name [nineleaps]{"entity":"companyname"}.
+      - Initiate a [leads]{"entity":"tablename"} creation process for [Kia az]{"entity":"fullname"}, who belongs to [cgi]{"entity":"companyname"} company.
+      - Begin the [leads]{"entity":"tablename"} generation process for a person named [ish Mre]{"entity":"fullname"}, who works for [adobe]{"entity":"companyname"} company.
+      - Make a new [leads]{"entity":"tablename"} entry for [Lea Sctt]{"entity":"fullname"} and assign him to company [keka]{"entity":"companyname"}.
+      - Log a new [leads]{"entity":"tablename"} with the name [Mav Les]{"entity":"fullname"} and the company [grow]{"entity":"companyname"}.
+      - Create a new [leads]{"entity":"tablename"} with company name [iifl]{"entity":"companyname"}'s database for [Maa Json]{"entity":"fullname"}.
+      - Set up a new [leads]{"entity":"tablename"} with  name [ra Tor]{"entity":"fullname"}, and company [xerox]{"entity":"companyname"}.
+      - Establish a [leads]{"entity":"tablename"} for [Naven Wrig]{"entity":"fullname"} under the company [vedanta]{"entity":"companyname"} company.
+      - Generate a new [lead]{"entity":"tablename"} with the name [Neh Golez]{"entity":"fullname"} and assign him to the company [byjus]{"entity":"companyname"}.
+      - Generate a [lead]{"entity":"tablename"} with  name [Nihara Marez]{"entity":"fullname"}, and company name [black rock]{"entity":"companyname"}.
+      - Open a new [lead]{"entity":"tablename"} with the name [Om per]{"entity":"fullname"} and the company [rasa]{"entity":"companyname"}.
+      - Start a [lead]{"entity":"tablename"} creation process for [Poa Rinson]{"entity":"fullname"} who belongs to the [meta]{"entity":"companyname"} company.
+      - Create a new [lead]{"entity":"tablename"} with  name [Pav Andon]{"entity":"fullname"}, and company [upstocks]{"entity":"companyname"}.
+      - Add a new [lead]{"entity":"tablename"} with the name [Raka mpson]{"entity":"fullname"} to the company [spry]{"entity":"companyname"} company's list.
+      - Produce a new [lead]{"entity":"tablename"} entry for [Raj Jacn]{"entity":"fullname"} who belongs to the company [uber]{"entity":"companyname"} corporation.
+      - Create a [lead]{"entity":"tablename"} with  name [ivia im]{"entity":"fullname"}, and association with company [flipkart]{"entity":"companyname"}.
+      - Add a [lead]{"entity":"tablename"} with the name [R Brn]{"entity":"fullname"} and the company [meesho]{"entity":"companyname"} to the database.
+      - Fill out a [lead]{"entity":"tablename"} form for [ohit Gcia]{"entity":"fullname"} and assign him to the company [LG]{"entity":"companyname"}.
+      - Create a new [lead]{"entity":"tablename"} for [Roshni son]{"entity":"fullname"} and associate him with the company [samsung]{"entity":"companyname"} organization.
+      - Add a new [lead]{"entity":"tablename"} with the name [Rhi Hedez]{"entity":"fullname"} to the [slack]{"entity":"companyname"} company's customer list.
+      - Make a new [lead]{"entity":"tablename"} for [Sal mikon]{"entity":"fullname"} and put him in the company [teams]{"entity":"companyname"} organization.
+      - Enter a [lead]{"entity":"tablename"} with  name [kshi salore]{"entity":"fullname"}, and company name [lenovo]{"entity":"companyname"}.
+      - Generate a [lead]{"entity":"tablename"} for [Sjana giert]{"entity":"fullname"} with the company [hp]{"entity":"companyname"}.
+      - Record a new [lead]{"entity":"tablename"} with the name [Shaan donnavan]{"entity":"fullname"} for the [bpl]{"entity":"companyname"} company.
+      - Create a [lead]{"entity":"tablename"} for [Tler bhagav]{"entity":"fullname"} and assign him to the company [sbi]{"entity":"companyname"} organization.
+      - Set up a new [lead]{"entity":"tablename"} for [Sha Gta]{"entity":"fullname"}, who works at company [union bnk]{"entity":"companyname"}.
+      - Start a new [lead]{"entity":"tablename"} entry for [Sv ah]{"entity":"fullname"} and associate him with the company [jp morgan chase]{"entity":"companyname"}.
+      - Add a new [lead]{"entity":"tablename"} with the name [Sha Ro]{"entity":"fullname"} to the company [wells fargo]{"entity":"companyname"} corporation's list.
+      - Log a [lead]{"entity":"tablename"} for [Sin Sih]{"entity":"fullname"} and add him to the [goldman sachs]{"entity":"companyname"} company.
+      - Create a [lead]{"entity":"tablename"} with  name [ha non]{"entity":"fullname"}, and affiliation with company [tesco]{"entity":"companyname"}.
+      - Generate a new [lead]{"entity":"tablename"} with the name [Sohan Forbez]{"entity":"fullname"} and the company [puma]{"entity":"companyname"}.
+      - Create a new [lead]{"entity":"tablename"} for [Car Patl]{"entity":"fullname"} and register him with the company [ITC]{"entity":"companyname"} organization.
+      - Add a [lead]{"entity":"tablename"} with the name [a R]{"entity":"fullname"} from company [wells fargo]{"entity":"companyname"} .
+      - Add [sai Ram]{"entity":"fullname"} and the company [HUL]{"entity":"companyname"} to the [leads]{"entity":"tablename"}  database.
+
+
+  - intent: create_contact
+    examples: |
+      - Make a new [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and account number [23456]{"entity":"accountid"}
+      - Add a [contact]{"entity":"tablename"} named [bharath simha]{"entity":"fullname"} and account ID [12987]{"entity":"accountid"}
+      - Generate a new [contact]{"entity":"tablename"} with name [yuvaraj munaga]{"entity":"fullname"} and account ID [1295464]{"entity":"accountid"}
+      - Record a new [contact]{"entity":"tablename"} with name [pavan reddy]{"entity":"fullname"} and account number [444]{"entity":"accountid"}
+      - Establish a new [contact]{"entity":"tablename"} with name [shiva reddy]{"entity":"fullname"} and account ID [35785]{"entity":"accountid"}
+      - Input a new [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and account ID [5934905823]{"entity":"accountid"}
+      - Build a new [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and account ID [4234]{"entity":"accountid"}
+      - Enter a new [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and account number [974783]{"entity":"accountid"}
+      - Set up a new [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and account ID [32134]{"entity":"accountid"}
+      - Formulate a new [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and account number [42344]{"entity":"accountid"}
+      - Create a fresh [contact]{"entity":"tablename"} with name [srinivas]{"entity":"fullname"} and account ID [8348]{"entity":"accountid"}
+      - Construct a new [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and account ID [48294]{"entity":"accountid"}
+      - Add a new [contact]{"entity":"tablename"} with name [raju]{"entity":"fullname"} and account number [00000]{"entity":"accountid"}
+      - Generate a new [contact]{"entity":"tablename"} with title [simon]{"entity":"fullname"} and account ID [11111]{"entity":"accountid"}
+      - Establish a new [contact]{"entity":"tablename"} with title [christoper]{"entity":"fullname"} and account number [34355463]{"entity":"accountid"}
+      - Record a new [contact]{"entity":"tablename"} with title [samuel]{"entity":"fullname"} and account ID [53463]{"entity":"accountid"}
+      - Input a new [contact]{"entity":"tablename"} with title [dicaprio]{"entity":"fullname"} and account number [235346457]{"entity":"accountid"}
+      - Build a new [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and account ID [43546457]{"entity":"accountid"}
+      - Enter a new [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and account number [534474]{"entity":"accountid"}
+      - Create a fresh [contact]{"entity":"tablename"} with title [CLAIRE dunphy]{"entity":"fullname"} and account ID [364547]{"entity":"accountid"}
+      - Construct a new [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and account number [57934321]{"entity":"accountid"}
+      - Set up a new [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and account ID [57934321]{"entity":"accountid"}
+      - Formulate a new [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and account number [2361571]{"entity":"accountid"}
+      - Add a new [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and account ID [9631]{"entity":"accountid"}
+      - Generate a new [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and account number [123115]{"entity":"accountid"}
+      - Establish a new [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and account ID [112463]{"entity":"accountid"}
+      - Record a new [contact]{"entity":"tablename"} with name [nik kalus]{"entity":"fullname"} and account number [44676]{"entity":"accountid"}
+      - Input a new [contact]{"entity":"tablename"} with title [elijah mikelson]{"entity":"fullname"} and account ID [2354647]{"entity":"accountid"}
+      - Build a new [contact]{"entity":"tablename"} with title [rebekha]{"entity":"fullname"} and account number [9615]{"entity":"accountid"}
+      - Enter a new [contact]{"entity":"tablename"} with name [valarie]{"entity":"fullname"} and account ID [7678684]{"entity":"accountid"}
+      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [johnathan]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [tommy shelby]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [tommyarthur shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [arthur]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [monica geller]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross geller]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [chandler bing]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [joey ]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phoebe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gunther]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with account ID [93859]{"entity":"accountid"} and name [janice]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with account ID [1]{"entity":"accountid"} and name [p p]{"entity":"fullname"}
+      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [a a]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [pq qe]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [jo shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [rma]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [sai gelramler]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross ram]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [ram]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [jo]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gher]{"entity":"fullname"}
+  
+
+  #verify
+  - intent: create_account
+    examples: |
+      - Establish a  [account] {"entity":"tablename"} with shipping city [New York]{"entity":"cityname"} City for company [ABC Corporation]{"entity":"companyname"}.
+      - Create a  [account] {"entity":"tablename"} for company [faggag]{"entity":"companyname"} with shipping city [dayton]{"entity":"cityname"} as the location.
+      - Produce a  [account] {"entity":"tablename"} for company [faggaggsdg]{"entity":"companyname"} with shipping city City [texas]{"entity":"cityname"}.
+      - Generate a fresh [account] {"entity":"tablename"} company [faggaggsdgvcdv]{"entity":"companyname"} with shipping city [dc]{"entity":"cityname"} City
+      - Set up a new [account] {"entity":"tablename"} for company [fgee]{"entity":"companyname"} with shipping city [vegas]{"entity":"cityname"} City
+      - Establish a new [account] {"entity":"tablename"} with shipping city [sitapur]{"entity":"cityname"} and company name [frtt]{"entity":"companyname"}.
+      - Initiate a new [account] {"entity":"tablename"} for [tretyre]{"entity":"companyname"} with shipping city [bengaluru]{"entity":"cityname"}.
+      - Generate a new [account] {"entity":"tablename"} for [dvvf]{"entity":"companyname"} company with shipping as [hyderabad]{"entity":"cityname"} City
+      - Create a new [account] {"entity":"tablename"} for [gfvv]{"entity":"companyname"} company that is headquartered in City [chennai]{"entity":"cityname"}.
+      - Establish a new [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company situated at City [coimbatore]{"entity":"cityname"}.
+      - Produce a  [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company located at [delhi]{"entity":"cityname"} City
+      - Generate a new [account] {"entity":"tablename"} for company [faang]{"entity":"companyname"} at the City [gurgoan]{"entity":"cityname"} location.
+      - Create a  [account] {"entity":"tablename"} for [vnj]{"entity":"companyname"} company in the city of [marathallyi]{"entity":"cityname"}.
+      - Establish a new [account] {"entity":"tablename"} for [vit]{"entity":"companyname"} in [Houston]{"entity":"cityname"} as the location.
+      - Make a new [account] {"entity":"tablename"} for company [hp]{"entity":"companyname"} in [Seattle]{"entity":"cityname"} City.
+      - Set up  [account] {"entity":"tablename"} with company name [aramco]{"entity":"companyname"} in the city of [Memphis]{"entity":"cityname"}.
+      - Create a new [account] {"entity":"tablename"} with company name [ioc]{"entity":"companyname"} in the locality of [Oklahoma]{"entity":"cityname"}.
+      - Initiate  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} within [Austin]{"entity":"cityname"} City
+      - Generate a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} in [Austin]{"entity":"cityname"} as the location.
+      - Produce  [account] {"entity":"tablename"} with company name [tom]{"entity":"companyname"} that is with shipping city [San Jose]{"entity":"cityname"}.
+      - Set up a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} at the location of [Boston]{"entity":"cityname"}.
+      - Create  [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} at the [El Paso]{"entity":"cityname"} address.
+      - create a [account] {"entity":"tablename"} with name [flip]{"entity":"companyname"} from city [hyderabad]{"entity":"cityname"}      
+      - Establish a new [account] {"entity":"tablename"} for company namely [bcbc]{"entity":"companyname"} in [Fort Worth]{"entity":"cityname"} City as its base of operation.
+      - Make a  [account] {"entity":"tablename"} in [New York]{"entity":"cityname"} City for [ABC Corporation]{"entity":"companyname"} company.
+      - Add  [account] {"entity":"tablename"} for company namely [faggag]{"entity":"companyname"} with City [dayton]{"entity":"cityname"} as the location.
+      - Generate a  [account] {"entity":"tablename"} for company namely [faggaggsdg]{"entity":"companyname"} with shipping city as [texas]{"entity":"cityname"}.
+      - create a fresh [account] {"entity":"tablename"} with company name [faggaggsdgvcdv]{"entity":"companyname"} with shipping city [dc]{"entity":"cityname"} City
+      -  Make new [account] {"entity":"tablename"}  with company name [fgee]{"entity":"companyname"} with shipping city [vegas]{"entity":"cityname"} City
+      - create a new [account] {"entity":"tablename"} in [sitapur]{"entity":"cityname"} City on behalf of company [frtt]{"entity":"companyname"}.
+      - Make a new [account] {"entity":"tablename"} for company [tretyre]{"entity":"companyname"} with shipping City [bengaluru]{"entity":"cityname"}.
+      - Setup a new [account] {"entity":"tablename"} for company [dvvf]{"entity":"companyname"} at [hyderabad]{"entity":"cityname"} City
+      - create new [account] {"entity":"tablename"} for [gfvv]{"entity":"companyname"} that is headquartered in City [chennai]{"entity":"cityname"}.
+      -  Setup a new [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} situated at City [coimbatore]{"entity":"cityname"}.
+      -  Make a  [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} located at [delhi]{"entity":"cityname"} City
+      - create a new [account] {"entity":"tablename"} for company namely [faang]{"entity":"companyname"} at the City [gurgoan]{"entity":"cityname"} location.
+      -   Setup [account] {"entity":"tablename"} for company [vnj]{"entity":"companyname"} in the city of [marathallyi]{"entity":"cityname"}.
+      - Make a new [account] {"entity":"tablename"} with company name [vit]{"entity":"companyname"} in [Houston]{"entity":"cityname"} as the location.
+      - create new [account] {"entity":"tablename"} with name [hp]{"entity":"companyname"} in [Seattle]{"entity":"cityname"} City.
+      -  Setup [account] {"entity":"tablename"} with name [aramco]{"entity":"companyname"} in the city of [Memphis]{"entity":"cityname"}.
+      - Enter a new [account] {"entity":"tablename"} with namely [ioc]{"entity":"companyname"} in the locality of [Oklahoma]{"entity":"cityname"}.
+      - create  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} within [Austin]{"entity":"cityname"} City
+      -  Setup a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} in [Austin]{"entity":"cityname"} as the location.
+      - create  [account] {"entity":"tablename"} with company name [tom]{"entity":"companyname"} that is with shipping city [San Jose]{"entity":"cityname"}.
+      - Enter a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} at the location of [Boston]{"entity":"cityname"}.
+      - create [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} at the [El Paso]{"entity":"cityname"} address.
+      - create a [account] {"entity":"tablename"} with [flip]{"entity":"companyname"} from city [hyderabad]{"entity":"cityname"}      
+      - Make a new [account] {"entity":"tablename"} with company name [bcbc]{"entity":"companyname"} in [Fort Worth]{"entity":"cityname"} City as its base of operation.
+  
+  - intent: create_opportunity
+    examples: |
+      - I want to create a [opportunity] {"entity":"tablename"} with the name [ProjectX]{"entity":"opportunityname"} on closing date [2023-05-01]{"entity":"closedate"} with stage [prospecting] {"entity":"stage"} 
+      - Can you help me create a new [opportunity] {"entity":"tablename"} called [ProjectY]{"entity":"opportunityname"} closing date on [2023-04-18](date) 
+      - Please create a [opportunity] {"entity":"tablename"} named [ProjectZ]{"entity":"opportunityname"} with closing on [2023-07-15]{"entity":"closedate"} with stage [prospecting] {"entity":"stage"} 
+      - I need to create a [opportunity] {"entity":"tablename"} on [2023-07-01]{"entity":"closedate"} with stage [prospecting] {"entity":"stage"} called [ProjectA]{"entity":"opportunityname"} 
+      - Let's create a new [opportunity] {"entity":"tablename"} named [ProjectB]{"entity":"opportunityname"} with a close date of [2023-06-15]{"entity":"closedate"} with stage [qualification] {"entity":"stage"}.
+      - create a [opportunity] {"entity":"tablename"} with the name [any name]{"entity":"opportunityname"} on closing date [2020-04-01]{"entity":"closedate"} with stage [qualification] {"entity":"stage"}
+      - create an [opportunity]{"entity":"tablename"} named [New Project]{"entity":"opportunityname"} with the closing date [2022-06-30]{"entity":"closedate"} with stage [qualification] {"entity":"stage"}
+      - Add a [opportunity]{"entity":"tablename"} named [Acquisition]{"entity":"opportunityname"} on the closing date [2023-01-15]{"entity":"closedate"} with stage [qualification] {"entity":"stage"}
+      - Generate a new [opportunity]{"entity":"tablename"} with the name [John Smith]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with stage [Needs analysis] {"entity":"stage"}
+      - A [opportunity]{"entity":"tablename"} with the name [JoSmithhn ]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with stage [Needs analysis] {"entity":"stage"}
+      - new [opportunity]{"entity":"tablename"} with the name [whatever]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with stage [needs analysis] {"entity":"stage"}
+      - Generate a new [opportunity] record titled [any name]{"entity":"opportunityname"} with the closing date set to [2020-4-01]{"entity":"closedate"} with stage [needs analysis] {"entity":"stage"}.
+      - Add a [opportunity] record to the database with the name [what ever name]{"entity":"opportunityname"} and the closing date of [2020-3-01]{"entity":"closedate"} with stage [value proposition] {"entity":"stage"}.
+      - Record a new [opportunity]{"entity":"tablename"} with the title [opp] {"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with stage [value proposition] {"entity":"stage"}.
+      - Create a new [opportunity]{"entity":"tablename"} called [you name it] {"entity":"opportunityname"} with a closing date set to [2022-12-31]{"entity":"closedate"} with stage [value proposition] {"entity":"stage"}.
+      - Make a new entry with stage [opportunity]{"entity":"tablename"} table with the title [i don't care] {"entity":"opportunityname"} and a closing date of [2021-11-31]{"entity":"closedate"} with stage [value proposition] {"entity":"stage"}.
+      - Add a [opportunity] record with the name [any opportunity] {"entity":"opportunityname"} and a closing date of [2020-05-23]{"entity":"closedate"} with stage [Id. decision makers] {"entity":"stage"} to the database.
+      - Save a new [opportunity] record titled [any] {"entity":"opportunityname"} with the closing date set to [2019-12-31]{"entity":"closedate"} with stage [Id. decision makers] {"entity":"stage"}.
+      - Register a new [opportunity]{"entity":"tablename"} named [fbwfbbf] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with the stage [Id. decision makers] {"entity":"stage"}.
+      - Store a [opportunity] record with the title [qwert] {"entity":"opportunityname"} and the closing date set to [2019-11-21]{"entity":"closedate"} with the stage [Id. decision makers] {"entity":"stage"}.
+      - Insert a new [opportunity]{"entity":"tablename"} with the name [any name] {"entity":"opportunityname"} and the closing date set to [2019-10-11]{"entity":"closedate"} with the stage [Percception analysis] {"entity":"stage"}.
+      - Set up a [opportunity] record titled [anythinbf] {"entity":"opportunityname"} with the closing date of [2019-09-24]{"entity":"closedate"} with the stage [Percception analysis] {"entity":"stage"}.
+      - Create a [opportunity] record called [deal] {"entity":"opportunityname"} with a closing date set to [2019-09-24]{"entity":"closedate"} with the stage [Percception analysis] {"entity":"stage"}.
+      - Establish a new [opportunity]{"entity":"tablename"} with the name [Sales Pipeline Expansion] {"entity":"opportunityname"} and the closing date set to [2024-10-22]{"entity":"closedate"} with the stage [Percception analysis] {"entity":"stage"}.
+      - Write a new [opportunity] record titled [Event Sponsorship] {"entity":"opportunityname"} with the closing date of [2024-10-23]{"entity":"closedate"} with the stage [Proposal/price quote] {"entity":"stage"} to the database.
+      - Add a [opportunity] record to the table with the name [Talent Acquisition Campaign] {"entity":"opportunityname"} and the closing date set to [2024-09-3]{"entity":"closedate"} with the stage [Proposal/price quote] {"entity":"stage"}.
+      - Save a [opportunity]{"entity":"tablename"} with the title [Campaign] {"entity":"opportunityname"} and a closing date of [2018-09-24]{"entity":"closedate"} with the stage [Proposal/price quote] {"entity":"stage"}.
+      - Store a new [opportunity] record called [Acquisition] {"entity":"opportunityname"} with the closing date set to [2025-09-24]{"entity":"closedate"} with the stage [Proposal/price quote] {"entity":"stage"}.
+      - Make a [opportunity] record with the title [Acquisition]  {"entity":"opportunityname"}and the closing date set to [2025-10-24]{"entity":"closedate"} with the stage [Negotiatio/review] {"entity":"stage"}.
+      - Add a [opportunity]{"entity":"tablename"} named [Partnership]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the stage [Negotiatio/review] {"entity":"stage"}.
+      - Set up a [opportunity]{"entity":"tablename"} with the name [Digital Marketing ]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the stage [Negotiatio/review] {"entity":"stage"}.
+      - Create an [opportunity]{"entity":"tablename"} named [Website Redesign Project]{"entity":"opportunityname"} that is expected to close on [2020-04-01]{"entity":"closedate"} with the stage [Negotiatio/review] {"entity":"stage"}.
+      - Schedule a [opportunity]{"entity":"tablename"} named [Project]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the stage [closed won] {"entity":"stage"}.
+      - Generate a [opportunity]{"entity":"tablename"} for [Market]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the stage [closed won] {"entity":"stage"}.
+      - Make a new [opportunity]{"entity":"tablename"} with the name [Analytics]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the stage [closed won] {"entity":"stage"}.
+      - Establish a [opportunity]{"entity":"tablename"} with the name [Influencer]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with the stage [closed won] {"entity":"stage"}.
+      - Put in a [opportunity]{"entity":"tablename"} named [Marketing]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} with the stage [closed lost] {"entity":"stage"}.
+      - Build a [opportunity]{"entity":"tablename"} named [Channel]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the stage [closed lost] {"entity":"stage"}.
+      - Add a new [opportunity]{"entity":"tablename"} with the name [Training]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with the stage [closed lost] {"entity":"stage"}.
+      - Create a [opportunity]{"entity":"tablename"} named [Product Line Extension]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the stage [closed lost] {"entity":"stage"}.
+      - Start a [opportunity]{"entity":"tablename"} for [Implementation]{"entity":"opportunityname"} that is set to close on [2020-04-01]{"entity":"closedate"} with the stage [closed lost] {"entity":"stage"}.
+      - Begin a new [opportunity]{"entity":"tablename"} with the name [Optimization]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the stage [closed Lost] {"entity":"stage"}.
+      - Establish an [opportunity]{"entity":"tablename"} named [Responsibility]{"entity":"opportunityname"} that is scheduled to close on [2020-04-01]{"entity":"closedate"} with the stage [closed Lost] {"entity":"stage"}.
+      - Plan a [opportunity]{"entity":"tablename"} for [Improvement]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the stage [closed Lost] {"entity":"stage"}.
+      - Make a [opportunity]{"entity":"tablename"} named [ Expansion Plan]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} with the stage [closed Lost] {"entity":"stage"}.
+      - I want to create a [opportunity] {"entity":"tablename"} with the name [software]{"entity":"opportunityname"} on closing date [2023-05-01]{"entity":"closedate"} with the stage [prospecting] {"entity":"stage"} 
+      - Can you help me create a new [opportunity] {"entity":"tablename"} called [software product]{"entity":"opportunityname"} closing date on [2023-04-18](date) 
+      - Please create a [opportunity] {"entity":"tablename"} named [Business partnership]{"entity":"opportunityname"} with closing on [2023-07-15]{"entity":"closedate"} with the stage [prospecting] {"entity":"stage"} 
+      - I need to create a [opportunity] {"entity":"tablename"} on [2023-07-01]{"entity":"closedate"} with the stage [prospecting] {"entity":"stage"} called [Investment]{"entity":"opportunityname"} 
+      - Let's create a new [opportunity] {"entity":"tablename"} named [Investment opportunity ]{"entity":"opportunityname"} with a close date of [2023-06-15]{"entity":"closedate"} with the stage [qualification] {"entity":"stage"}.
+      - create a [opportunity] {"entity":"tablename"} with the name [fast-food restaurant chain]{"entity":"opportunityname"} on closing date [2020-04-01]{"entity":"closedate"} with the stage [qualification] {"entity":"stage"}
+      - create an [opportunity]{"entity":"tablename"} named [New Project]{"entity":"opportunityname"} with the closing date [2022-06-30]{"entity":"closedate"} with the stage [qualification] {"entity":"stage"}
+      - Add a [opportunity]{"entity":"tablename"} named [Acquisition]{"entity":"opportunityname"} on the closing date [2023-01-15]{"entity":"closedate"} with the stage [qualification] {"entity":"stage"}
+      - Generate a new [opportunity]{"entity":"tablename"} with the name [John Smith]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the stage [Needs analysis] {"entity":"stage"}
+      - A [opportunity]{"entity":"tablename"} with the name [JoSmithhn ]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the stage [Needs analysis] {"entity":"stage"}
+      - new [opportunity]{"entity":"tablename"} with the name [Licensing]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the stage [needs analysis] {"entity":"stage"}
+      - Generate a new [opportunity] record titled [fast-food restaurant ]{"entity":"opportunityname"} with the closing date set to [2020-4-01]{"entity":"closedate"} with  stage [needs analysis] {"entity":"stage"}.
+      - Add a [opportunity] record to the database with the name [Distribution]{"entity":"opportunityname"} and the closing date of [2020-3-01]{"entity":"closedate"} with  stage [value proposition] {"entity":"stage"}.
+      - Record a new [opportunity]{"entity":"tablename"} with the title [opp] {"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with  stage [value proposition] {"entity":"stage"}.
+      - Create a new [opportunity]{"entity":"tablename"} called [Consulting] {"entity":"opportunityname"} with a closing date set to [2022-12-31]{"entity":"closedate"} with  stage [value proposition] {"entity":"stage"}.
+      - Make a new entry with  stage [opportunity]{"entity":"tablename"} table with the title [purchase] {"entity":"opportunityname"} and a closing date of [2021-11-31]{"entity":"closedate"} with  stage [value proposition] {"entity":"stage"}.
+      - Add a [opportunity] record with the name [Partnership] {"entity":"opportunityname"} and a closing date of [2020-05-23]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"} to the database.
+      - Save a new [opportunity] record titled [any Franchise] {"entity":"opportunityname"} with the closing date set to [2019-12-31]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
+      - Register a new [opportunity]{"entity":"tablename"} named [commerce] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
+      - Store a [opportunity] record with the title [Partnership opportunity] {"entity":"opportunityname"} and the closing date set to [2019-11-21]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
+      - Insert a new [opportunity]{"entity":"tablename"} with the name [restaurant] {"entity":"opportunityname"} and the closing date set to [2019-10-11]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
+      - Set up a [opportunity] record titled [sports team] {"entity":"opportunityname"} with the closing date of [2019-09-24]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
+      - Create a [opportunity] record called [deal] {"entity":"opportunityname"} with a closing date set to [2019-09-24]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
+      - Establish a new [opportunity]{"entity":"tablename"} with the name [facility] {"entity":"opportunityname"} and the closing date set to [2024-10-22]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
+      - Write a new [opportunity] record titled [agriculture project] {"entity":"opportunityname"} with the closing date of [2024-10-23]{"entity":"closedate"} with  stage [Proposal/price quote] {"entity":"stage"} to the database.
+      - Add a [opportunity] record to the table with the name [project Campaign] {"entity":"opportunityname"} and the closing date set to [2024-09-3]{"entity":"closedate"} with  stage [Proposal/price quote] {"entity":"stage"}.
+      - Save a [opportunity]{"entity":"tablename"} with the title [niche food] {"entity":"opportunityname"} and a closing date of [2018-09-24]{"entity":"closedate"} with  stage [Proposal/price quote] {"entity":"stage"}.
+      - Store a new [opportunity] record called [new markets] {"entity":"opportunityname"} with the closing date set to [2025-09-24]{"entity":"closedate"} with  stage [Proposal/price quote] {"entity":"stage"}.
+      - Make a [opportunity] record with the title [small business] {"entity":"opportunityname"} and the closing date set to [2025-10-24]{"entity":"closedate"} with  stage [Negotiatio/review] {"entity":"stage"}.
+      - Add a [opportunity]{"entity":"tablename"} named [business]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with  stage [Negotiatio/review] {"entity":"stage"}.
+      - Set up a [opportunity]{"entity":"tablename"} with the name [community]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with  stage [Negotiatio/review] {"entity":"stage"}.
+      - Create an [opportunity]{"entity":"tablename"} named [resort]{"entity":"opportunityname"} that is expected to close on [2020-04-01]{"entity":"closedate"} with  stage [Negotiatio/review] {"entity":"stage"}.
+      - Schedule a [opportunity]{"entity":"tablename"} named [pharmaceutical]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with  stage [closed won] {"entity":"stage"}.
+      - Generate a [opportunity]{"entity":"tablename"} for [clothing]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the stage [closed won] {"entity":"stage"}.
+      - Make a new [opportunity]{"entity":"tablename"} with the name [Real estate]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the stage [closed won] {"entity":"stage"}.
+      - Establish a [opportunity]{"entity":"tablename"} with the name [government]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} in the stage [closed won] {"entity":"stage"}.
+      - Put in a [opportunity]{"entity":"tablename"} named [invention]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} in the stage [closed lost] {"entity":"stage"}.
+      - Build a [opportunity]{"entity":"tablename"} named [Channel]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the stage [closed lost] {"entity":"stage"}.
+      - Add a new [opportunity]{"entity":"tablename"} with the name [Training]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} in the stage [closed lost] {"entity":"stage"}.
+      - Create a [opportunity]{"entity":"tablename"} named [Product Line Extension]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the stage [closed lost] {"entity":"stage"}.
+      - Start a [opportunity]{"entity":"tablename"} for [Implementation]{"entity":"opportunityname"} that is set to close on [2020-04-01]{"entity":"closedate"} in the stage [closed lost] {"entity":"stage"}.
+      - Begin a new [opportunity]{"entity":"tablename"} with the name [Optimization]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the stage [closed Lost] {"entity":"stage"}.
+      - Establish an [opportunity]{"entity":"tablename"} named [Responsibility]{"entity":"opportunityname"} that is scheduled to close on [2020-04-01]{"entity":"closedate"} in the stage [closed Lost] {"entity":"stage"}.
+      - Plan a [opportunity]{"entity":"tablename"} for [Improvement]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the stage [closed Lost] {"entity":"stage"}.
+      - Make a [opportunity]{"entity":"tablename"} named [ Expansion Plan]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} in the stage [closed Lost] {"entity":"stage"}.
+
+  - intent: update_opportunity
+    examples: |
+      - update name to [new opp] {"entity":"opportunityname","group":"tobeupdated"} where name is [Distribution gker]{"entity":"opportunityname","group":"using"} in [opportunity]{"entity":"tablename"} 
+      - in [opportunity]{"entity":"tablename"} update name to [old opportunity] {"entity":"opportunityname","group":"tobeupdated"} where name is [Website Redesign Project]{"entity":"opportunityname","group":"using"}
+      - in [opportunity]{"entity":"tablename"} update name to [something] {"entity":"opportunityname","group":"tobeupdated"} where name is [Channel vjekl]{"entity":"opportunityname","group":"using"}
+      - in [opportunity]{"entity":"tablename"} update name to [revamp123] {"entity":"opportunityname","group":"tobeupdated"} where name is [government]{"entity":"opportunityname","group":"using"}
+      - update name to [Implementation] {"entity":"opportunityname","group":"tobeupdated"} where name is [facility df]{"entity":"opportunityname","group":"using"} in [opportunity]{"entity":"tablename"} 
+      - update name to [Initiative] {"entity":"opportunityname","group":"tobeupdated"} where name is [community rww efe fe]{"entity":"opportunityname","group":"using"} in [opportunity]{"entity":"tablename"} 
+      - update name to [pranayExpansion] {"entity":"opportunityname","group":"tobeupdated"} where name is [business gwgwef]{"entity":"opportunityname","group":"using"} in [opportunity]{"entity":"tablename"} 
+      - in [opportunity]{"entity":"tablename"} Change the name of [concept ]{"entity":"opportunityname","group":"using"} to [new project]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Modify the [project]{"entity":"opportunityname","group":"using"} name to [new opp]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Update the name of the [organization]{"entity":"opportunityname","group":"using"} opportunity to [new opp]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"}  Rename the [invention]{"entity":"opportunityname","group":"using"} opportunity to [project]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Alter the name of [supplier]{"entity":"opportunityname","group":"using"} to [new opp]{"entity":"opportunityname","group":"tobeupdated"}.
+      - Replace the name [product]{"entity":"opportunityname","group":"using"} with [new opp]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+      - Transform the [product]{"entity":"opportunityname","group":"using"} name to [new opp]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+      - Convert the name of [expansion]{"entity":"opportunityname","group":"using"} to [expansion]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+      - Update the opportunity name from [launch]{"entity":"opportunityname","group":"using"} to [launch]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+      - Revise the name of the [luxury]{"entity":"opportunityname","group":"using"} opportunity to [luxury]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+      - in [opportunity]{"entity":"tablename"} Change the name of the [beauty]{"entity":"opportunityname","group":"using"} opportunity to [beauty]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Correct the [social]{"entity":"opportunityname","group":"using"} opportunity name to [launch]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Amend the name of [pet]{"entity":"opportunityname","group":"using"} opportunity to [new opp]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Make the [new]{"entity":"opportunityname","group":"using"} name [new opp]{"entity":"opportunityname","group":"tobeupdated"}.
+      - in [opportunity]{"entity":"tablename"} Assign the name [new opp]{"entity":"opportunityname","group":"tobeupdated"} to the [Joint]{"entity":"opportunityname","group":"using"} opportunity.
+      - in [opportunity]{"entity":"tablename"} Put the name [new opp]{"entity":"opportunityname","group":"tobeupdated"} as the opportunity name instead of [or]{"entity":"opportunityname","group":"using"}.
+      - Set the [into]{"entity":"opportunityname","group":"using"} opportunity name to [into]{"entity":"opportunityname","group":"tobeupdated"} in [opportunity]{"entity":"tablename"} 
+
+  - intent: update_account
+    examples: |
+        - update the account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+        - update the account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+        - change account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+        - change account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+        - modify account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+        - modify account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+        - update the phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+        - update the phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+        - change phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+        - change phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+        - modify phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+        - modify phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+        - update the ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+        - update the ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+        - change ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+        - change ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+        - modify ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+        - modify ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+
+  - intent: update_lead
+    examples: |
+      - update the first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - update the first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - modify first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - modify first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - change first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - change first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - update the mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - update the mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - modify mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - modify mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - change mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - change mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - update the company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - update the company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
+      - modify company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - modify company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
+      - change company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - change company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
+
+  - synonym: lead
+    examples: |
+      -leads
+      -the leads
+      -all leads
+      -a leads
+
+
+# - intent: goodbye
+#   examples: |
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+
+# nlu-20230414-182457-yellow-taste.tar.gz
