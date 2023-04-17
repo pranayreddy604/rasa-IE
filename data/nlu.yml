@@ -335,7 +335,7 @@ nlu:
       - Make a new entry with  stage [opportunity]{"entity":"tablename"} table with the title [purchase] {"entity":"opportunityname"} and a closing date of [2021-11-31]{"entity":"closedate"} with  stage [value proposition] {"entity":"stage"}.
       - Add a [opportunity] record with the name [Partnership] {"entity":"opportunityname"} and a closing date of [2020-05-23]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"} to the database.
       - Save a new [opportunity] record titled [any Franchise] {"entity":"opportunityname"} with the closing date set to [2019-12-31]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
-      - Register a new [opportunity]{"entity":"tablename"} named [commerce] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
+      - Register a new [opportunity]{"entity":"tablename"}  named [commerce] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
       - Store a [opportunity] record with the title [Partnership opportunity] {"entity":"opportunityname"} and the closing date set to [2019-11-21]{"entity":"closedate"} with  stage [Id. decision makers] {"entity":"stage"}.
       - Insert a new [opportunity]{"entity":"tablename"} with the name [restaurant] {"entity":"opportunityname"} and the closing date set to [2019-10-11]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
       - Set up a [opportunity] record titled [sports team] {"entity":"opportunityname"} with the closing date of [2019-09-24]{"entity":"closedate"} with  stage [Percception analysis] {"entity":"stage"}.
