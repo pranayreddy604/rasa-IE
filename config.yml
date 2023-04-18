@@ -2,7 +2,27 @@ recipe: default.v1
 assistant_id: 20230412-161435-teal-modal
 language: en
 
-pipeline: null
+# pipeline: null
+pipeline:
+  - name: "SpacyNLP"
+    model: en_core_web_md
+  - name: "SpacyTokenizer"
+  - name: "SpacyFeaturizer"
+  - name: "RegexFeaturizer"
+  - name: "CRFEntityExtractor"
+    min_intent_confidence: 0.7
+    # min_entity_confidence: 0.7
+  - name: "EntitySynonymMapper"
+  - name: "SklearnIntentClassifier"
+  - name: "EmbeddingIntentClassifier"
+    intent_classification_threshold: 0.7
+  - name: "FallbackClassifier"
+    threshold: 0.7
+    ambiguity_threshold: 0.1
+    deny_suggestion_intent_name: "out_of_scope"
+    fallback_message: "Sorry, I didn't get that. Can you please rephrase or provide more information?"
+
+
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.

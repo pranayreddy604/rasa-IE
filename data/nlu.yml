@@ -164,33 +164,33 @@ nlu:
 
   - intent: create_contact
     examples: |
-      - Make a new [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and account number [23456]{"entity":"accountid"}
+      - Make a [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and account number [23456]{"entity":"accountid"}
       - Add a [contact]{"entity":"tablename"} named [bharath simha]{"entity":"fullname"} and account ID [12987]{"entity":"accountid"}
-      - Generate a new [contact]{"entity":"tablename"} with name [yuvaraj munaga]{"entity":"fullname"} and account ID [1295464]{"entity":"accountid"}
-      - Record a new [contact]{"entity":"tablename"} with name [pavan reddy]{"entity":"fullname"} and account number [444]{"entity":"accountid"}
-      - Establish a new [contact]{"entity":"tablename"} with name [shiva reddy]{"entity":"fullname"} and account ID [35785]{"entity":"accountid"}
-      - Input a new [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and account ID [5934905823]{"entity":"accountid"}
-      - Build a new [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and account ID [4234]{"entity":"accountid"}
-      - Enter a new [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and account number [974783]{"entity":"accountid"}
-      - Set up a new [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and account ID [32134]{"entity":"accountid"}
-      - Formulate a new [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and account number [42344]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} with name [yuvaraj munaga]{"entity":"fullname"} and account ID [1295464]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with name [pavan reddy]{"entity":"fullname"} and account number [444]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} with name [shiva reddy]{"entity":"fullname"} and account ID [35785]{"entity":"accountid"}
+      - Input a [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and account ID [5934905823]{"entity":"accountid"}
+      - Build a [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and account ID [4234]{"entity":"accountid"}
+      - Enter a [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and account number [974783]{"entity":"accountid"}
+      - Set up a [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and account ID [32134]{"entity":"accountid"}
+      - Formulate a [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and account number [42344]{"entity":"accountid"}
       - Create a fresh [contact]{"entity":"tablename"} with name [srinivas]{"entity":"fullname"} and account ID [8348]{"entity":"accountid"}
-      - Construct a new [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and account ID [48294]{"entity":"accountid"}
-      - Add a new [contact]{"entity":"tablename"} with name [raju]{"entity":"fullname"} and account number [00000]{"entity":"accountid"}
-      - Generate a new [contact]{"entity":"tablename"} with title [simon]{"entity":"fullname"} and account ID [11111]{"entity":"accountid"}
-      - Establish a new [contact]{"entity":"tablename"} with title [christoper]{"entity":"fullname"} and account number [34355463]{"entity":"accountid"}
-      - Record a new [contact]{"entity":"tablename"} with title [samuel]{"entity":"fullname"} and account ID [53463]{"entity":"accountid"}
-      - Input a new [contact]{"entity":"tablename"} with title [dicaprio]{"entity":"fullname"} and account number [235346457]{"entity":"accountid"}
-      - Build a new [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and account ID [43546457]{"entity":"accountid"}
-      - Enter a new [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and account number [534474]{"entity":"accountid"}
+      - Construct a [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and account ID [48294]{"entity":"accountid"}
+      - Add a  [contact]{"entity":"tablename"} with name [raju]{"entity":"fullname"} and account number [00000]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} with title [simon]{"entity":"fullname"} and account ID [11111]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} with title [christoper]{"entity":"fullname"} and account number [34355463]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with title [samuel]{"entity":"fullname"} and account ID [53463]{"entity":"accountid"}
+      - Input a [contact]{"entity":"tablename"} with title [dicaprio]{"entity":"fullname"} and account number [235346457]{"entity":"accountid"}
+      - Build a [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and account ID [43546457]{"entity":"accountid"}
+      - Enter a [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and account number [534474]{"entity":"accountid"}
       - Create a fresh [contact]{"entity":"tablename"} with title [CLAIRE dunphy]{"entity":"fullname"} and account ID [364547]{"entity":"accountid"}
-      - Construct a new [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and account number [57934321]{"entity":"accountid"}
-      - Set up a new [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and account ID [57934321]{"entity":"accountid"}
-      - Formulate a new [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and account number [2361571]{"entity":"accountid"}
-      - Add a new [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and account ID [9631]{"entity":"accountid"}
-      - Generate a new [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and account number [123115]{"entity":"accountid"}
-      - Establish a new [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and account ID [112463]{"entity":"accountid"}
-      - Record a new [contact]{"entity":"tablename"} with name [nik kalus]{"entity":"fullname"} and account number [44676]{"entity":"accountid"}
+      - Construct a [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and account number [57934321]{"entity":"accountid"}
+      - Set up a [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and account ID [57934321]{"entity":"accountid"}
+      - Formulate a [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and account number [2361571]{"entity":"accountid"}
+      - Add a [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and account ID [9631]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and account number [123115]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and account ID [112463]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with name [nik kalus]{"entity":"fullname"} and account number [44676]{"entity":"accountid"}
       - Input a new [contact]{"entity":"tablename"} with title [elijah mikelson]{"entity":"fullname"} and account ID [2354647]{"entity":"accountid"}
       - Build a new [contact]{"entity":"tablename"} with title [rebekha]{"entity":"fullname"} and account number [9615]{"entity":"accountid"}
       - Enter a new [contact]{"entity":"tablename"} with name [valarie]{"entity":"fullname"} and account ID [7678684]{"entity":"accountid"}
@@ -456,6 +456,87 @@ nlu:
       -all leads
       -a leads
 
+
+  - intent: update_account
+    examples: |
+      - update the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} in the [account] {"entity":"tablename"} table to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - update the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} in the [account] {"entity":tablename} table
+      - change the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} in the [account] {"entity":"tablename"} table to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - change the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} in the [account] {"entity":tablename} table
+      - modify the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} in the [account] {"entity":"tablename"} table to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - modify the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} in the [account] {"entity":tablename} table
+      - set the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} in the [account] {"entity":"tablename"} table to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - set the first name of the account named [accountname] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} in the [account] {"entity":tablename} table
+      - update the phone number of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [1234567890] {"entity":"phone"}
+      - update the phone number of the account named [accountname] {"entity":"account_name"} to [1234567890] {"entity":"phone"} in the [account] {"entity":"tablename"} table
+      - modify the phone number of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [1234567890] {"entity":"phone"}
+      - modify the phone number of the account named [accountname] {"entity":"account_name"} to [1234567890] {"entity":"phone"} in the [account] {"entity":"tablename"} table
+      - set the phone number of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [1234567890] {"entity":"phone"}
+      - set the phone number of the account named [accountname] {"entity":"account_name"} to [1234567890] {"entity":"phone"} in the [account] {"entity":"tablename"} table
+      - change the phone number of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [1234567890] {"entity":"phone"}
+      - change the phone number of the account named [accountname] {"entity":"account_name"} to [1234567890] {"entity":"phone"} in the [account] {"entity":"tablename"} table
+      - update the ownership of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [Public] {"entity":"ownership"}
+      - update the ownership of the account named [accountname] {"entity":"account_name"} to [Public] {"entity":"ownership"} in the [account] {"entity":"tablename"} table
+      - change the ownership of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [Private] {"entity":"ownership"}
+      - change the ownership of the account named [accountname] {"entity":"account_name"} to [Private] {"entity":"ownership"} in the [account] {"entity":"tablename"} table
+      - modify the ownership of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [Subsidiary] {"entity":"ownership"}
+      - modify the ownership of the account named [accountname] {"entity":"account_name"} to [Subsidiary] {"entity":"ownership"} in the [account] {"entity":"tablename"} table
+      - set the ownership of the account named [accountname] {"entity":"account_name"} in the [account] {"entity":"tablename"} table to [Public] {"entity":"ownership"}
+      - set the ownership of the account named [accountname] {"entity":"account_name"} to [Public] {"entity":"ownership"} in the [account] {"entity":"tablename"} table
+
+  - intent: update_lead
+    examples: |
+      - update the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - update the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [lead] {"entity":"tablename"} table
+      - modify the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - modify the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [lead] {"entity":"tablename"} table
+      - change the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - change the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [lead] {"entity":"tablename"} table
+      - set the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - set the first name of the lead named [firstname] {"entity":"first_name", "role":"current_first_name"} and with email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [lead] {"entity":"tablename"} table
+      - update the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - update the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [1234567890] {"entity":"mobile"} in the [lead] {"entity":"tablename"} table
+      - modify the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - modify the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [1234567890] {"entity":"mobile"} in the [lead] {"entity":"tablename"} table
+      - set the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - set the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [1234567890] {"entity":"mobile"} in the [lead] {"entity":"tablename"} table
+      - change the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - change the mobile number of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [1234567890] {"entity":"mobile"} in the [lead] {"entity":"tablename"} table
+      - update the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [Nineleaps] {"entity":"company"}
+      - update the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [ABC industries] {"entity":"company"} in the [lead] {"entity":"tablename"} table
+      - modify the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [Ambuja Cements] {"entity":"company"}
+      - modify the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [XYZ Corporation] {"entity":"company"} in the [lead] {"entity":"tablename"} table
+      - change the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [Microsoft] {"entity":"company"}
+      - change the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [Tata Steels] {"entity":"company"} in the [lead] {"entity":"tablename"} table
+      - set the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} in the [lead] {"entity":"tablename"} table to [IBM] {"entity":"company"}
+      - set the company of the lead named [firstname] {"entity":"first_name"} and with email [email] {"entity":"email"} to [Tata Motors] {"entity":"company"} in the [lead] {"entity":"tablename"} table
+
+  - intent: update_contact
+    examples: |
+      - update the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} in the [contact] {"entity":"contact"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - update the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [contact] {"entity":"tablename"} table
+      - modify the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} in the [contact] {"entity":"contact"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - modify the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [contact] {"entity":"tablename"} table
+      - change the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} in the [contact] {"entity":"contact"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - change the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [contact] {"entity":"tablename"} table
+      - set the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} in the [contact] {"entity":"contact"} table to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - set the first name of the contact named [firstname] {"entity":"first_name", "role":"current_first_name"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} in the [contact] {"entity":"tablename"} table
+      - update the mobile of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - update the mobile of the contact named [firstname] {"entity":"first_name"} to [1234567890] {"entity":"mobile"} in the [contact] {"entity":"tablename"} table
+      - change the mobile of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - change the mobile of the contact named [firstname] {"entity":"first_name"} to [1234567890] {"entity":"mobile"} in the [contact] {"entity":"tablename"} table
+      - set the mobile of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - set the mobile of the contact named [firstname] {"entity":"first_name"} to [1234567890] {"entity":"mobile"} in the [contact] {"entity":"tablename"} table
+      - modify the mobile of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [1234567890] {"entity":"mobile"}
+      - modify the mobile of the contact named [firstname] {"entity":"first_name"} to [1234567890] {"entity":"mobile"} in the [contact] {"entity":"tablename"} table
+      - update the email of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [abc@yahoo.com] {"entity":"email"}
+      - update the email of the contact named [firstname] {"entity":"first_name"} to [xyz@gmail.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
+      - change the email of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [ajay@hottmail.com] {"entity":"email"}
+      - change the email of the contact named [firstname] {"entity":"first_name"} to [abc@yahoo.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
+      - modify the email of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [akarsh@outlook.com] {"entity":"email"}
+      - modify the email of the contact named [firstname] {"entity":"first_name"} to [ajay@hottmail.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
+      - set the email of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [xyz@gmail.com] {"entity":"email"}
+      - set the email of the contact named [firstname] {"entity":"first_name"} to [akarsh@outlook.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
 
 # - intent: goodbye
 #   examples: |
