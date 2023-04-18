@@ -222,53 +222,53 @@ nlu:
   - intent: create_account
     examples: |
       - Establish a  [account] {"entity":"tablename"} with shipping city [New York]{"entity":"cityname"} City for company [ABC Corporation]{"entity":"companyname"}.
-      - Create a  [account] {"entity":"tablename"} for company [faggag]{"entity":"companyname"} with shipping city [dayton]{"entity":"cityname"} as the location.
-      - Produce a  [account] {"entity":"tablename"} for company [faggaggsdg]{"entity":"companyname"} with shipping city City [texas]{"entity":"cityname"}.
+      - Create a  [account] {"entity":"tablename"} with company [faggag]{"entity":"companyname"} with shipping city [dayton]{"entity":"cityname"} as the location.
+      - Produce a  [account] {"entity":"tablename"} with company [faggaggsdg]{"entity":"companyname"} with shipping city City [texas]{"entity":"cityname"}.
       - Generate a fresh [account] {"entity":"tablename"} company [faggaggsdgvcdv]{"entity":"companyname"} with shipping city [dc]{"entity":"cityname"} City
-      - Set up a new [account] {"entity":"tablename"} for company [fgee]{"entity":"companyname"} with shipping city [vegas]{"entity":"cityname"} City
+      - Set up a new [account] {"entity":"tablename"} with company [fgee]{"entity":"companyname"} with shipping city [vegas]{"entity":"cityname"} City
       - Establish a new [account] {"entity":"tablename"} with shipping city [sitapur]{"entity":"cityname"} and company name [frtt]{"entity":"companyname"}.
-      - Initiate a new [account] {"entity":"tablename"} for [tretyre]{"entity":"companyname"} with shipping city [bengaluru]{"entity":"cityname"}.
-      - Generate a new [account] {"entity":"tablename"} for [dvvf]{"entity":"companyname"} company with shipping as [hyderabad]{"entity":"cityname"} City
-      - Create a new [account] {"entity":"tablename"} for [gfvv]{"entity":"companyname"} company that is headquartered in City [chennai]{"entity":"cityname"}.
-      - Establish a new [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company situated at City [coimbatore]{"entity":"cityname"}.
-      - Produce a  [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company located at [delhi]{"entity":"cityname"} City
-      - Generate a new [account] {"entity":"tablename"} for company [faang]{"entity":"companyname"} at the City [gurgoan]{"entity":"cityname"} location.
-      - Create a  [account] {"entity":"tablename"} for [vnj]{"entity":"companyname"} company in the city of [marathallyi]{"entity":"cityname"}.
-      - Establish a new [account] {"entity":"tablename"} for [vit]{"entity":"companyname"} in [Houston]{"entity":"cityname"} as the location.
-      - Make a new [account] {"entity":"tablename"} for company [hp]{"entity":"companyname"} in [Seattle]{"entity":"cityname"} City.
-      - Set up  [account] {"entity":"tablename"} with company name [aramco]{"entity":"companyname"} in the city of [Memphis]{"entity":"cityname"}.
-      - Create a new [account] {"entity":"tablename"} with company name [ioc]{"entity":"companyname"} in the locality of [Oklahoma]{"entity":"cityname"}.
-      - Initiate  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} within [Austin]{"entity":"cityname"} City
-      - Generate a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} in [Austin]{"entity":"cityname"} as the location.
+      - Initiate a new [account] {"entity":"tablename"} with [tretyre]{"entity":"companyname"} with shipping city [bengaluru]{"entity":"cityname"}.
+      - Generate a new [account] {"entity":"tablename"} with [dvvf]{"entity":"companyname"} company with shipping city as [hyderabad]{"entity":"cityname"} City
+      - Create a new [account] {"entity":"tablename"} with [gfvv]{"entity":"companyname"} company and shipping city as [chennai]{"entity":"cityname"}.
+      - Establish a new [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company and shipping city as[coimbatore]{"entity":"cityname"}.
+      - Produce a  [account] {"entity":"tablename"} for [dfdhrt]{"entity":"companyname"} company and shipping city as [delhi]{"entity":"cityname"} City
+      - Generate a new [account] {"entity":"tablename"} for company [faang]{"entity":"companyname"}and shipping city as [gurgoan]{"entity":"cityname"} location.
+      - Create a  [account] {"entity":"tablename"} for [vnj]{"entity":"companyname"} company and shipping city as  [marathallyi]{"entity":"cityname"}.
+      - Establish a new [account] {"entity":"tablename"} for [vit]{"entity":"companyname"} and shipping city as [Houston]{"entity":"cityname"} as the location.
+      - Make a new [account] {"entity":"tablename"} for company [hp]{"entity":"companyname"} and shipping city as [Seattle]{"entity":"cityname"} City.
+      - Set up  [account] {"entity":"tablename"} with company name [aramco]{"entity":"companyname"} and shipping city as  [Memphis]{"entity":"cityname"}.
+      - Create a new [account] {"entity":"tablename"} with company name [ioc]{"entity":"companyname"} and shipping city as  [Oklahoma]{"entity":"cityname"}.
+      - Initiate  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} and shipping city as  [Austin]{"entity":"cityname"} City
+      - Generate a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} and shipping city as [Austin]{"entity":"cityname"} as the location.
       - Produce  [account] {"entity":"tablename"} with company name [tom]{"entity":"companyname"} that is with shipping city [San Jose]{"entity":"cityname"}.
-      - Set up a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} at the location of [Boston]{"entity":"cityname"}.
-      - Create  [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} at the [El Paso]{"entity":"cityname"} address.
-      - create a [account] {"entity":"tablename"} with name [flip]{"entity":"companyname"} from city [hyderabad]{"entity":"cityname"}      
-      - Establish a new [account] {"entity":"tablename"} for company namely [bcbc]{"entity":"companyname"} in [Fort Worth]{"entity":"cityname"} City as its base of operation.
-      - Make a  [account] {"entity":"tablename"} in [New York]{"entity":"cityname"} City for [ABC Corporation]{"entity":"companyname"} company.
-      - Add  [account] {"entity":"tablename"} for company namely [faggag]{"entity":"companyname"} with City [dayton]{"entity":"cityname"} as the location.
+      - Set up a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} and shipping city as  [Boston]{"entity":"cityname"}.
+      - Create  [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} and shipping city as  [El Paso]{"entity":"cityname"} address.
+      - create a [account] {"entity":"tablename"} with name [flip]{"entity":"companyname"} and shipping city as  [hyderabad]{"entity":"cityname"}      
+      - Establish a new [account] {"entity":"tablename"} for company namely [bcbc]{"entity":"companyname"} and shipping city as [Fort Worth]{"entity":"cityname"} City as its base of operation.
+      - Make a  [account] {"entity":"tablename"} with shipping city as [New York]{"entity":"cityname"}  and for company [ABC Corporation]{"entity":"companyname"} .
+      - Add  [account] {"entity":"tablename"} for company namely [faggag]{"entity":"companyname"} with shipping city as [dayton]{"entity":"cityname"} as the location.
       - Generate a  [account] {"entity":"tablename"} for company namely [faggaggsdg]{"entity":"companyname"} with shipping city as [texas]{"entity":"cityname"}.
       - create a fresh [account] {"entity":"tablename"} with company name [faggaggsdgvcdv]{"entity":"companyname"} with shipping city [dc]{"entity":"cityname"} City
       -  Make new [account] {"entity":"tablename"}  with company name [fgee]{"entity":"companyname"} with shipping city [vegas]{"entity":"cityname"} City
       - create a new [account] {"entity":"tablename"} in [sitapur]{"entity":"cityname"} City on behalf of company [frtt]{"entity":"companyname"}.
       - Make a new [account] {"entity":"tablename"} for company [tretyre]{"entity":"companyname"} with shipping City [bengaluru]{"entity":"cityname"}.
-      - Setup a new [account] {"entity":"tablename"} for company [dvvf]{"entity":"companyname"} at [hyderabad]{"entity":"cityname"} City
-      - create new [account] {"entity":"tablename"} for [gfvv]{"entity":"companyname"} that is headquartered in City [chennai]{"entity":"cityname"}.
-      -  Setup a new [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} situated at City [coimbatore]{"entity":"cityname"}.
-      -  Make a  [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} located at [delhi]{"entity":"cityname"} City
-      - create a new [account] {"entity":"tablename"} for company namely [faang]{"entity":"companyname"} at the City [gurgoan]{"entity":"cityname"} location.
-      -   Setup [account] {"entity":"tablename"} for company [vnj]{"entity":"companyname"} in the city of [marathallyi]{"entity":"cityname"}.
+      - Setup a new [account] {"entity":"tablename"} for company [dvvf]{"entity":"companyname"} with shipping City [hyderabad]{"entity":"cityname"} City
+      - create new [account] {"entity":"tablename"} for [gfvv]{"entity":"companyname"} with shipping City [chennai]{"entity":"cityname"}.
+      -  Setup a new [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} and shipping city as[coimbatore]{"entity":"cityname"}.
+      -  Make a  [account] {"entity":"tablename"} for company [dfdhrt]{"entity":"companyname"} and shipping city as [delhi]{"entity":"cityname"} City
+      - create a new [account] {"entity":"tablename"} for company namely [faang]{"entity":"companyname"} and shipping city as  City [gurgoan]{"entity":"cityname"} location.
+      -   Setup [account] {"entity":"tablename"} for company [vnj]{"entity":"companyname"} and shipping city as  [marathallyi]{"entity":"cityname"}.
       - Make a new [account] {"entity":"tablename"} with company name [vit]{"entity":"companyname"} in [Houston]{"entity":"cityname"} as the location.
-      - create new [account] {"entity":"tablename"} with name [hp]{"entity":"companyname"} in [Seattle]{"entity":"cityname"} City.
-      -  Setup [account] {"entity":"tablename"} with name [aramco]{"entity":"companyname"} in the city of [Memphis]{"entity":"cityname"}.
-      - Enter a new [account] {"entity":"tablename"} with namely [ioc]{"entity":"companyname"} in the locality of [Oklahoma]{"entity":"cityname"}.
-      - create  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} within [Austin]{"entity":"cityname"} City
-      -  Setup a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} in [Austin]{"entity":"cityname"} as the location.
+      - create new [account] {"entity":"tablename"} with name [hp]{"entity":"companyname"} with shipping City [Seattle]{"entity":"cityname"} City.
+      -  Setup [account] {"entity":"tablename"} with name [aramco]{"entity":"companyname"} and shipping city as  [Memphis]{"entity":"cityname"}.
+      - Enter a new [account] {"entity":"tablename"} with namely [ioc]{"entity":"companyname"} and shipping city as  [Oklahoma]{"entity":"cityname"}.
+      - create  [account] {"entity":"tablename"} with company name [bpcl]{"entity":"companyname"} and shipping city as  [Austin]{"entity":"cityname"} City
+      -  Setup a fresh [account] {"entity":"tablename"} with company name [ram]{"entity":"companyname"} with shipping City [Austin]{"entity":"cityname"} as the location.
       - create  [account] {"entity":"tablename"} with company name [tom]{"entity":"companyname"} that is with shipping city [San Jose]{"entity":"cityname"}.
-      - Enter a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} at the location of [Boston]{"entity":"cityname"}.
-      - create [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} at the [El Paso]{"entity":"cityname"} address.
-      - create a [account] {"entity":"tablename"} with [flip]{"entity":"companyname"} from city [hyderabad]{"entity":"cityname"}      
-      - Make a new [account] {"entity":"tablename"} with company name [bcbc]{"entity":"companyname"} in [Fort Worth]{"entity":"cityname"} City as its base of operation.
+      - Enter a new [account] {"entity":"tablename"} with company name [cat]{"entity":"companyname"} and shipping city as  [Boston]{"entity":"cityname"}.
+      - create [account] {"entity":"tablename"} with company name [fb]{"entity":"companyname"} and shipping city as  [El Paso]{"entity":"cityname"} address.
+      - create a [account] {"entity":"tablename"} with [flip]{"entity":"companyname"} and shipping city as  [hyderabad]{"entity":"cityname"}      
+      - Make a new [account] {"entity":"tablename"} with company name [bcbc]{"entity":"companyname"} with shipping City [Fort Worth]{"entity":"cityname"} City as its base of operation.
   
   - intent: create_opportunity
     examples: |
@@ -392,46 +392,63 @@ nlu:
 
   - intent: update_account
     examples: |
-        - update the account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
-        - update the account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
-        - change account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
-        - change account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
-        - modify account name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
-        - modify account name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
-        - update the phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
-        - update the phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
-        - change phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
-        - change phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
-        - modify phone number to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
-        - modify phone number of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
-        - update the ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
-        - update the ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
-        - change ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
-        - change ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
-        - modify ownerhip to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
-        - modify ownership of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+      - update the [account] {"entity":"tablename"} of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - update the [account] {"entity":"tablename"} name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+      - change [account] {"entity":"tablename"} name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - change [account] {"entity":"tablename"} name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+      - modify [account] {"entity":"tablename"} name of [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - modify [account] {"entity":"tablename"} name to [accountname] {"entity":"account_name", "role":"updated_account_name"} for the account [account] {"entity":"account_name", "role":"current_account_name"}
+      - update the [account] {"entity":"tablename"} to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+      - update the [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - change [account] {"entity":"tablename"} to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+      - change [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - modify [account] {"entity":"tablename"} to [phone] {"entity":"phone"} for the account [account] {"entity":"account_name"}
+      - modify [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - update the [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+      - update the [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+      - change [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+      - change [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+      - modify [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} for the account [account] {"entity":"account_name"}
+      - modify [account] {"entity":"tablename"} of [account] {"entity":"account_name"} to [ownership] {"entity":"ownership"}
+      - update [account] {"entity":"tablename"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} where the account is [account] {"entity":"account_name", "role":"current_account_name"}
+      - update [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - change [account] {"entity":"tablename"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} where the account is [account] {"entity":"account_name", "role":"current_account_name"}
+      - change [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - modify [account] {"entity":"tablename"} to [accountname] {"entity":"account_name", "role":"updated_account_name"} where the account is [account] {"entity":"account_name", "role":"current_account_name"}
+      - modify [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name", "role":"current_account_name"} to [accountname] {"entity":"account_name", "role":"updated_account_name"}
+      - update [account] {"entity":"tablename"} to [phone] {"entity":"phone"} where the account is [account] {"entity":"account_name"}
+      - update [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - change [account] {"entity":"tablename"} to [phone] {"entity":"phone"} where the account is [account] {"entity":"account_name"}
+      - change [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - modify [account] {"entity":"tablename"} to [phone] {"entity":"phone"} where the account is [account] {"entity":"account_name"}
+      - modify [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [phone] {"entity":"phone"}
+      - update [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} where the account is [account] {"entity":"account_name"}
+      - update [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [ownership] {"entity": "ownership"}
+      - change [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} where the account is [account] {"entity":"account_name"}
+      - change [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [ownership] {"entity": "ownership"}
+      - modify [account] {"entity":"tablename"} to [ownership] {"entity":"ownership"} where the account is [account] {"entity":"account_name"}
+      - modify [account] {"entity":"tablename"} where the account is [account] {"entity":"account_name"} to [ownership] {"entity": "ownership"}
 
   - intent: update_lead
     examples: |
-      - update the first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
-      - update the first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
-      - modify first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
-      - modify first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
-      - change first name of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
-      - change first name to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
-      - update the mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
-      - update the mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
-      - modify mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
-      - modify mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
-      - change mobile of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
-      - change mobile to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
-      - update the company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
-      - update the company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
-      - modify company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
-      - modify company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
-      - change company of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
-      - change company to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
-
+      - update the [lead] {"entity":"tablename"} of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - update the [lead] {"entity":"tablename"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - modify [lead] {"entity":"tablename"} of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - modify [lead] {"entity":"tablename"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - change [lead] {"entity":"tablename"} of lead with name [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"} to [firstname] {"entity":"first_name", "role":"updated_first_name"}
+      - change [lead] {"entity":"tablename"} to [firstname] {"entity":"first_name", "role":"updated_first_name"} of the lead [firstname] {"entity":"first_name", "role":"current_first_name"} and email [email] {"entity":"email"}
+      - update the [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - update the [lead] {"entity":"tablename"} to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - modify [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - modify [lead] {"entity":"tablename"} to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - change [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [mobile] {"entity":"mobile"}
+      - change [lead] {"entity":"tablename"} to [mobile] {"entity":"mobile"} for the lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"}
+      - update the [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - update the [lead] {"entity":"tablename"} to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
+      - modify [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - modify [lead] {"entity":"tablename"} to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
+      - change [lead] {"entity":"tablename"} of lead [firstname] {"entity":"first_name"} and email [email] {"entity":"email"} to [company] {"entity":"company"}
+      - change [lead] {"entity":"tablename"} to [company] {"entity":"company"} of the lead [firstname] {"entity":"firstname"} and email [email] {"entity":"email"}
   - synonym: lead
     examples: |
       -leads
