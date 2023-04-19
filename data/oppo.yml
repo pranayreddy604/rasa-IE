@@ -1,0 +1,151 @@
+version: "3.1"
+
+nlu:
+  - intent: create_opportunity
+    examples: |
+      - I want to create a  opportunity with the name [ProjectX]{"entity":"opportunityname"} on closing date [2023-05-01]{"entity":"closedate"} with status [prospecting] {"entity": "status", group:"req" } 
+      - Can you help me create a new  opportunity called [ProjectY]{"entity":"opportunityname"} closing date on [2023-04-18](date) 
+      - Please create a  opportunity named [ProjectZ]{"entity":"opportunityname"} with closing on [2023-07-15]{"entity":"closedate"} with status [prospecting] {"entity": "status", group:"req" } 
+      - I need to create a  opportunity on [2023-07-01]{"entity":"closedate"} with status [prospecting] {"entity": "status", group:"req" } called [ProjectA]{"entity":"opportunityname"} 
+      - Let's create a new  opportunity named [ProjectB]{"entity":"opportunityname"} with a close date of [2023-06-15]{"entity":"closedate"} with status [qualification] {"entity": "status", group:"req" }.
+      - create a  opportunity with the name [any name]{"entity":"opportunityname"} on closing date [2020-04-01]{"entity":"closedate"} with status [qualification] {"entity": "status", group:"req" }
+      - create an  opportunity named [New Project]{"entity":"opportunityname"} with the closing date [2022-06-30]{"entity":"closedate"} with status [qualification] {"entity": "status", group:"req" }
+      - Add a  opportunity named [Acquisition]{"entity":"opportunityname"} on the closing date [2023-01-15]{"entity":"closedate"} with status [qualification] {"entity": "status", group:"req" }
+      - Generate a new  opportunity with the name [John Smith]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with status [Needs analysis] {"entity": "status", group:"req" }
+      - A  opportunity with the name [JoSmithhn ]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with status [Needs analysis] {"entity": "status", group:"req" }
+      - new  opportunity with the name [whatever]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with status [needs analysis] {"entity": "status", group:"req" }
+      - Generate a new [opportunity] record titled [any name]{"entity":"opportunityname"} with the closing date set to [2020-4-01]{"entity":"closedate"} with status [needs analysis] {"entity": "status", group:"req" }.
+      - Add a [opportunity] record to the database with the name [what ever name]{"entity":"opportunityname"} and the closing date of [2020-3-01]{"entity":"closedate"} with status [value proposition] {"entity": "status", group:"req" }.
+      - Record a new  opportunity with the title [opp] {"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with status [value proposition] {"entity": "status", group:"req" }.
+      - Create a new  opportunity called [you name it] {"entity":"opportunityname"} with a closing date set to [2022-12-31]{"entity":"closedate"} with status [value proposition] {"entity": "status", group:"req" }.
+      - Make a new entry with status  opportunity table with the title [i don't care] {"entity":"opportunityname"} and a closing date of [2021-11-31]{"entity":"closedate"} with status [value proposition] {"entity": "status", group:"req" }.
+      - Add a [opportunity] record with the name [any opportunity] {"entity":"opportunityname"} and a closing date of [2020-05-23]{"entity":"closedate"} with status [Id. decision makers] {"entity": "status", group:"req" } to the database.
+      - Save a new [opportunity] record titled [any] {"entity":"opportunityname"} with the closing date set to [2019-12-31]{"entity":"closedate"} with status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Register a new  opportunity named [fbwfbbf] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with the status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Store a [opportunity] record with the title [qwert] {"entity":"opportunityname"} and the closing date set to [2019-11-21]{"entity":"closedate"} with the status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Insert a new  opportunity with the name [any name] {"entity":"opportunityname"} and the closing date set to [2019-10-11]{"entity":"closedate"} with the status [Percception analysis] {"entity": "status", group:"req" }.
+      - Set up a [opportunity] record titled [anythinbf] {"entity":"opportunityname"} with the closing date of [2019-09-24]{"entity":"closedate"} with the status [Percception analysis] {"entity": "status", group:"req" }.
+      - Create a [opportunity] record called [deal] {"entity":"opportunityname"} with a closing date set to [2019-09-24]{"entity":"closedate"} with the status [Percception analysis] {"entity": "status", group:"req" }.
+      - Establish a new  opportunity with the name [Sales Pipeline Expansion] {"entity":"opportunityname"} and the closing date set to [2024-10-22]{"entity":"closedate"} with the status [Percception analysis] {"entity": "status", group:"req" }.
+      - Write a new [opportunity] record titled [Event Sponsorship] {"entity":"opportunityname"} with the closing date of [2024-10-23]{"entity":"closedate"} with the status [Proposal/price quote] {"entity": "status", group:"req" } to the database.
+      - Add a [opportunity] record to the table with the name [Talent Acquisition Campaign] {"entity":"opportunityname"} and the closing date set to [2024-09-3]{"entity":"closedate"} with the status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Save a  opportunity with the title [Campaign] {"entity":"opportunityname"} and a closing date of [2018-09-24]{"entity":"closedate"} with the status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Store a new [opportunity] record called [Acquisition] {"entity":"opportunityname"} with the closing date set to [2025-09-24]{"entity":"closedate"} with the status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Make a [opportunity] record with the title [Acquisition]  {"entity":"opportunityname"}and the closing date set to [2025-10-24]{"entity":"closedate"} with the status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Add a  opportunity named [Partnership]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Set up a  opportunity with the name [Digital Marketing ]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Create an  opportunity named [Website Redesign Project]{"entity":"opportunityname"} that is expected to close on [2020-04-01]{"entity":"closedate"} with the status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Schedule a  opportunity named [Project]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the status [closed won] {"entity": "status", group:"req" }.
+      - Generate a  opportunity for [Market]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the status [closed won] {"entity": "status", group:"req" }.
+      - Make a new  opportunity with the name [Analytics]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the status [closed won] {"entity": "status", group:"req" }.
+      - Establish a  opportunity with the name [Influencer]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with the status [closed won] {"entity": "status", group:"req" }.
+      - Put in a  opportunity named [Marketing]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} with the status [closed lost] {"entity": "status", group:"req" }.
+      - Build a  opportunity named [Channel]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the status [closed lost] {"entity": "status", group:"req" }.
+      - Add a new  opportunity with the name [Training]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with the status [closed lost] {"entity": "status", group:"req" }.
+      - Create a  opportunity named [Product Line Extension]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with the status [closed lost] {"entity": "status", group:"req" }.
+      - Start a  opportunity for [Implementation]{"entity":"opportunityname"} that is set to close on [2020-04-01]{"entity":"closedate"} with the status [closed lost] {"entity": "status", group:"req" }.
+      - Begin a new  opportunity with the name [Optimization]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the status [closed Lost] {"entity": "status", group:"req" }.
+      - Establish an  opportunity named [Responsibility]{"entity":"opportunityname"} that is scheduled to close on [2020-04-01]{"entity":"closedate"} with the status [closed Lost] {"entity": "status", group:"req" }.
+      - Plan a  opportunity for [Improvement]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with the status [closed Lost] {"entity": "status", group:"req" }.
+      - Make a  opportunity named [ Expansion Plan]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} with the status [closed Lost] {"entity": "status", group:"req" }.
+      - I want to create a  opportunity with the name [software]{"entity":"opportunityname"} on closing date [2023-05-01]{"entity":"closedate"} with the status [prospecting] {"entity": "status", group:"req" } 
+      - Can you help me create a new  opportunity called [software product]{"entity":"opportunityname"} closing date on [2023-04-18](date) 
+      - Please create a  opportunity named [Business partnership]{"entity":"opportunityname"} with closing on [2023-07-15]{"entity":"closedate"} with the status [prospecting] {"entity": "status", group:"req" } 
+      - I need to create a  opportunity on [2023-07-01]{"entity":"closedate"} with the status [prospecting] {"entity": "status", group:"req" } called [Investment]{"entity":"opportunityname"} 
+      - Let's create a new  opportunity named [Investment opportunity ]{"entity":"opportunityname"} with a close date of [2023-06-15]{"entity":"closedate"} with the status [qualification] {"entity": "status", group:"req" }.
+      - create a  opportunity with the name [fast-food restaurant chain]{"entity":"opportunityname"} on closing date [2020-04-01]{"entity":"closedate"} with the status [qualification] {"entity": "status", group:"req" }
+      - create an  opportunity named [New Project]{"entity":"opportunityname"} with the closing date [2022-06-30]{"entity":"closedate"} with the status [qualification] {"entity": "status", group:"req" }
+      - Add a  opportunity named [Acquisition]{"entity":"opportunityname"} on the closing date [2023-01-15]{"entity":"closedate"} with the status [qualification] {"entity": "status", group:"req" }
+      - Generate a new  opportunity with the name [John Smith]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the status [Needs analysis] {"entity": "status", group:"req" }
+      - A  opportunity with the name [JoSmithhn ]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the status [Needs analysis] {"entity": "status", group:"req" }
+      - new  opportunity with the name [Licensing]{"entity":"opportunityname"} and closing date [2024-12-31]{"entity":"closedate"} with the status [needs analysis] {"entity": "status", group:"req" }
+      - Generate a new [opportunity] record titled [fast-food restaurant ]{"entity":"opportunityname"} with the closing date set to [2020-4-01]{"entity":"closedate"} with  status [needs analysis] {"entity": "status", group:"req" }.
+      - Add a [opportunity] record to the database with the name [Distribution]{"entity":"opportunityname"} and the closing date of [2020-3-01]{"entity":"closedate"} with  status [value proposition] {"entity": "status", group:"req" }.
+      - Record a new  opportunity with the title [opp] {"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} with  status [value proposition] {"entity": "status", group:"req" }.
+      - Create a new  opportunity called [Consulting] {"entity":"opportunityname"} with a closing date set to [2022-12-31]{"entity":"closedate"} with  status [value proposition] {"entity": "status", group:"req" }.
+      - Make a new entry with  status  opportunity table with the title [purchase] {"entity":"opportunityname"} and a closing date of [2021-11-31]{"entity":"closedate"} with  status [value proposition] {"entity": "status", group:"req" }.
+      - Add a [opportunity] record with the name [Partnership] {"entity":"opportunityname"} and a closing date of [2020-05-23]{"entity":"closedate"} with  status [Id. decision makers] {"entity": "status", group:"req" } to the database.
+      - Save a new [opportunity] record titled [any Franchise] {"entity":"opportunityname"} with the closing date set to [2019-12-31]{"entity":"closedate"} with  status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Register a new  opportunity  named [commerce] {"entity":"opportunityname"} with a closing date of [2019-01-01]{"entity":"closedate"} with  status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Store a [opportunity] record with the title [Partnership opportunity] {"entity":"opportunityname"} and the closing date set to [2019-11-21]{"entity":"closedate"} with  status [Id. decision makers] {"entity": "status", group:"req" }.
+      - Insert a new  opportunity with the name [restaurant] {"entity":"opportunityname"} and the closing date set to [2019-10-11]{"entity":"closedate"} with  status [Percception analysis] {"entity": "status", group:"req" }.
+      - Set up a [opportunity] record titled [sports team] {"entity":"opportunityname"} with the closing date of [2019-09-24]{"entity":"closedate"} with  status [Percception analysis] {"entity": "status", group:"req" }.
+      - Create a [opportunity] record called [deal] {"entity":"opportunityname"} with a closing date set to [2019-09-24]{"entity":"closedate"} with  status [Percception analysis] {"entity": "status", group:"req" }.
+      - Establish a new  opportunity with the name [facility] {"entity":"opportunityname"} and the closing date set to [2024-10-22]{"entity":"closedate"} with  status [Percception analysis] {"entity": "status", group:"req" }.
+      - Write a new [opportunity] record titled [agriculture project] {"entity":"opportunityname"} with the closing date of [2024-10-23]{"entity":"closedate"} with  status [Proposal/price quote] {"entity": "status", group:"req" } to the database.
+      - Add a [opportunity] record to the table with the name [project Campaign] {"entity":"opportunityname"} and the closing date set to [2024-09-3]{"entity":"closedate"} with  status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Save a  opportunity with the title [niche food] {"entity":"opportunityname"} and a closing date of [2018-09-24]{"entity":"closedate"} with  status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Store a new [opportunity] record called [new markets] {"entity":"opportunityname"} with the closing date set to [2025-09-24]{"entity":"closedate"} with  status [Proposal/price quote] {"entity": "status", group:"req" }.
+      - Make a [opportunity] record with the title [small business] {"entity":"opportunityname"} and the closing date set to [2025-10-24]{"entity":"closedate"} with  status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Add a  opportunity named [business]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with  status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Set up a  opportunity with the name [community]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} with  status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Create an  opportunity named [resort]{"entity":"opportunityname"} that is expected to close on [2020-04-01]{"entity":"closedate"} with  status [Negotiatio/review] {"entity": "status", group:"req" }.
+      - Schedule a  opportunity named [pharmaceutical]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} with  status [closed won] {"entity": "status", group:"req" }.
+      - Generate a  opportunity for [clothing]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the status [closed won] {"entity": "status", group:"req" }.
+      - Make a new  opportunity with the name [Real estate]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the status [closed won] {"entity": "status", group:"req" }.
+      - Establish a  opportunity with the name [government]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} in the status [closed won] {"entity": "status", group:"req" }.
+      - Put in a  opportunity named [invention]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} in the status [closed lost] {"entity": "status", group:"req" }.
+      - Build a  opportunity named [Channel]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the status [closed lost] {"entity": "status", group:"req" }.
+      - Add a new  opportunity with the name [Training]{"entity":"opportunityname"} and a closing date of [2020-04-01]{"entity":"closedate"} in the status [closed lost] {"entity": "status", group:"req" }.
+      - Create a  opportunity named [Product Line Extension]{"entity":"opportunityname"} that closes on [2020-04-01]{"entity":"closedate"} in the status [closed lost] {"entity": "status", group:"req" }.
+      - Start a  opportunity for [Implementation]{"entity":"opportunityname"} that is set to close on [2020-04-01]{"entity":"closedate"} in the status [closed lost] {"entity": "status", group:"req" }.
+      - Begin a new  opportunity with the name [Optimization]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the status [closed Lost] {"entity": "status", group:"req" }.
+      - Establish an  opportunity named [Responsibility]{"entity":"opportunityname"} that is scheduled to close on [2020-04-01]{"entity":"closedate"} in the status [closed Lost] {"entity": "status", group:"req" }.
+      - Plan a  opportunity for [Improvement]{"entity":"opportunityname"} to close on [2020-04-01]{"entity":"closedate"} in the status [closed Lost] {"entity": "status", group:"req" }.
+      - Make a  opportunity named [ Expansion Plan]{"entity":"opportunityname"} with a closing date of [2020-04-01]{"entity":"closedate"} in the status [closed Lost] {"entity": "status", group:"req" }.
+
+
+  - intent: create_contact
+    examples: |
+      - Make a [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and account number [23456]{"entity":"accountid"}
+      - Add a [contact]{"entity":"tablename"} named [bharath simha]{"entity":"fullname"} and account ID [12987]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} with name [yuvaraj munaga]{"entity":"fullname"} and account ID [1295464]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with name [pavan reddy]{"entity":"fullname"} and account number [444]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} with name [shiva reddy]{"entity":"fullname"} and account ID [35785]{"entity":"accountid"}
+      - Input a [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and account ID [5934905823]{"entity":"accountid"}
+      - Build a [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and account ID [4234]{"entity":"accountid"}
+      - Enter a [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and account number [974783]{"entity":"accountid"}
+      - Set up a [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and account ID [32134]{"entity":"accountid"}
+      - Formulate a [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and account number [42344]{"entity":"accountid"}
+      - Create a fresh [contact]{"entity":"tablename"} with name [srinivas]{"entity":"fullname"} and account ID [8348]{"entity":"accountid"}
+      - Construct a [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and account ID [48294]{"entity":"accountid"}
+      - Add a  [contact]{"entity":"tablename"} with name [raju]{"entity":"fullname"} and account number [00000]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} with title [simon]{"entity":"fullname"} and account ID [11111]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} with title [christoper]{"entity":"fullname"} and account number [34355463]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with title [samuel]{"entity":"fullname"} and account ID [53463]{"entity":"accountid"}
+      - Input a [contact]{"entity":"tablename"} with title [dicaprio]{"entity":"fullname"} and account number [235346457]{"entity":"accountid"}
+      - Build a [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and account ID [43546457]{"entity":"accountid"}
+      - Enter a [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and account number [534474]{"entity":"accountid"}
+      - Create a fresh [contact]{"entity":"tablename"} with title [CLAIRE dunphy]{"entity":"fullname"} and account ID [364547]{"entity":"accountid"}
+      - Construct a [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and account number [57934321]{"entity":"accountid"}
+      - Set up a [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and account ID [57934321]{"entity":"accountid"}
+      - Formulate a [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and account number [2361571]{"entity":"accountid"}
+      - Add a [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and account ID [9631]{"entity":"accountid"}
+      - Generate a [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and account number [123115]{"entity":"accountid"}
+      - Establish a [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and account ID [112463]{"entity":"accountid"}
+      - Record a [contact]{"entity":"tablename"} with name [nik kalus]{"entity":"fullname"} and account number [44676]{"entity":"accountid"}
+      - Input a new [contact]{"entity":"tablename"} with title [elijah mikelson]{"entity":"fullname"} and account ID [2354647]{"entity":"accountid"}
+      - Build a new [contact]{"entity":"tablename"} with title [rebekha]{"entity":"fullname"} and account number [9615]{"entity":"accountid"}
+      - Enter a new [contact]{"entity":"tablename"} with name [valarie]{"entity":"fullname"} and account ID [7678684]{"entity":"accountid"}
+      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [johnathan]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [tommy shelby]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [tommyarthur shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [arthur]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [monica geller]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross geller]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [chandler bing]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [joey ]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phoebe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gunther]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with account ID [93859]{"entity":"accountid"} and name [janice]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with account ID [1]{"entity":"accountid"} and name [p p]{"entity":"fullname"}
+      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [a a]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [pq qe]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [jo shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [rma]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [sai gelramler]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross ram]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [ram]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [jo]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gher]{"entity":"fullname"}

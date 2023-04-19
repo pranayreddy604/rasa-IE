@@ -2,10 +2,15 @@ version: "3.1"
 
 intents:
   - get
+  - create_lead
+  - create_contact
+  - create_account
+  - create_opportunity
+  - create
   # - post
   # - put
   # - delete
-  - greet
+  # - greet
   # - goodbye
   # - affirm
   # - deny

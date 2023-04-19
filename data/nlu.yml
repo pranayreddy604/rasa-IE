@@ -42,6 +42,24 @@ nlu:
 
   - intent: create_lead
     examples: |
+      - create a new lead
+      - create new lead
+      -create a lead
+      -create an lead
+      - create lead
+      - create an new lead
+      - make lead
+      - make a lead
+      - make an lead
+      - make new lead
+      - make a new lead
+      - make an new lead
+      - generate lead
+      - generate a lead
+      - generate an lead
+      - generate new lead
+      - generate a new lead
+      - generate an new lead
       - create a [leads]{"entity":"tablename"} with name [Sohan Reddy]{"entity":"fullname"} and company [sysy]{"entity":"companyname"}.
       - Generate a [leads]{"entity":"tablename"} record for an individual named [Amara Nair]{"entity":"fullname"} and associated with the company [aaa]{"entity":"companyname"}
       - Generate a [leads]{"entity":"tablename"} for the company [aaabb]{"entity":"companyname"} with the name [Amara Iyer]{"entity":"fullname"}.
@@ -164,63 +182,109 @@ nlu:
 
   - intent: create_contact
     examples: |
-      - Make a [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and account number [23456]{"entity":"accountid"}
-      - Add a [contact]{"entity":"tablename"} named [bharath simha]{"entity":"fullname"} and account ID [12987]{"entity":"accountid"}
-      - Generate a [contact]{"entity":"tablename"} with name [yuvaraj munaga]{"entity":"fullname"} and account ID [1295464]{"entity":"accountid"}
-      - Record a [contact]{"entity":"tablename"} with name [pavan reddy]{"entity":"fullname"} and account number [444]{"entity":"accountid"}
-      - Establish a [contact]{"entity":"tablename"} with name [shiva reddy]{"entity":"fullname"} and account ID [35785]{"entity":"accountid"}
-      - Input a [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and account ID [5934905823]{"entity":"accountid"}
-      - Build a [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and account ID [4234]{"entity":"accountid"}
-      - Enter a [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and account number [974783]{"entity":"accountid"}
-      - Set up a [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and account ID [32134]{"entity":"accountid"}
-      - Formulate a [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and account number [42344]{"entity":"accountid"}
-      - Create a fresh [contact]{"entity":"tablename"} with name [srinivas]{"entity":"fullname"} and account ID [8348]{"entity":"accountid"}
-      - Construct a [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and account ID [48294]{"entity":"accountid"}
-      - Add a  [contact]{"entity":"tablename"} with name [raju]{"entity":"fullname"} and account number [00000]{"entity":"accountid"}
-      - Generate a [contact]{"entity":"tablename"} with title [simon]{"entity":"fullname"} and account ID [11111]{"entity":"accountid"}
-      - Establish a [contact]{"entity":"tablename"} with title [christoper]{"entity":"fullname"} and account number [34355463]{"entity":"accountid"}
-      - Record a [contact]{"entity":"tablename"} with title [samuel]{"entity":"fullname"} and account ID [53463]{"entity":"accountid"}
-      - Input a [contact]{"entity":"tablename"} with title [dicaprio]{"entity":"fullname"} and account number [235346457]{"entity":"accountid"}
-      - Build a [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and account ID [43546457]{"entity":"accountid"}
-      - Enter a [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and account number [534474]{"entity":"accountid"}
-      - Create a fresh [contact]{"entity":"tablename"} with title [CLAIRE dunphy]{"entity":"fullname"} and account ID [364547]{"entity":"accountid"}
-      - Construct a [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and account number [57934321]{"entity":"accountid"}
-      - Set up a [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and account ID [57934321]{"entity":"accountid"}
-      - Formulate a [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and account number [2361571]{"entity":"accountid"}
-      - Add a [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and account ID [9631]{"entity":"accountid"}
-      - Generate a [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and account number [123115]{"entity":"accountid"}
-      - Establish a [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and account ID [112463]{"entity":"accountid"}
-      - Record a [contact]{"entity":"tablename"} with name [nik kalus]{"entity":"fullname"} and account number [44676]{"entity":"accountid"}
-      - Input a new [contact]{"entity":"tablename"} with title [elijah mikelson]{"entity":"fullname"} and account ID [2354647]{"entity":"accountid"}
-      - Build a new [contact]{"entity":"tablename"} with title [rebekha]{"entity":"fullname"} and account number [9615]{"entity":"accountid"}
-      - Enter a new [contact]{"entity":"tablename"} with name [valarie]{"entity":"fullname"} and account ID [7678684]{"entity":"accountid"}
-      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [johnathan]{"entity":"fullname"}
-      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [tommy shelby]{"entity":"fullname"}
-      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [tommyarthur shelby]{"entity":"fullname"}
-      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [arthur]{"entity":"fullname"}
-      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [monica geller]{"entity":"fullname"}
-      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross geller]{"entity":"fullname"}
-      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [chandler bing]{"entity":"fullname"}
-      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [joey ]{"entity":"fullname"}
-      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phoebe]{"entity":"fullname"}
-      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gunther]{"entity":"fullname"}
-      -Add a new [contact]{"entity":"tablename"} with account ID [93859]{"entity":"accountid"} and name [janice]{"entity":"fullname"}
-      -Add a new [contact]{"entity":"tablename"} with account ID [1]{"entity":"accountid"} and name [p p]{"entity":"fullname"}
-      -Generate a new [contact]{"entity":"tablename"} with account ID [873812]{"entity":"accountid"} and name [a a]{"entity":"fullname"}
-      -Record a new [contact]{"entity":"tablename"} with account ID [0876]{"entity":"accountid"} and name [pq qe]{"entity":"fullname"}
-      -Establish a [contact]{"entity":"tablename"} with account ID [37347]{"entity":"accountid"} and name [jo shelby]{"entity":"fullname"}
-      -Input a new [contact]{"entity":"tablename"} with account ID [843883]{"entity":"accountid"} and name [rma]{"entity":"fullname"}
-      -Build a new [contact]{"entity":"tablename"} with account ID [8472983]{"entity":"accountid"} and name [sai gelramler]{"entity":"fullname"}
-      -Enter a new [contact]{"entity":"tablename"} with account ID [482374723]{"entity":"accountid"} and name [ross ram]{"entity":"fullname"}
-      -Set up a new [contact]{"entity":"tablename"} with account ID [87423]{"entity":"accountid"} and name [ram]{"entity":"fullname"}
-      -Formulate a new [contact]{"entity":"tablename"} with account ID [7482578293]{"entity":"accountid"} and name [jo]{"entity":"fullname"}
-      -Create a fresh [contact]{"entity":"tablename"} with account ID [9592]{"entity":"accountid"} and name [phe]{"entity":"fullname"}
-      -Construct a new [contact]{"entity":"tablename"} with account ID [945829]{"entity":"accountid"} and name [gher]{"entity":"fullname"}
-  
+      - create a new contact
+      - create new contact
+      -create a contact
+      -create an contact
+      - create contact
+      - create an new contact
+      - make contact
+      - make a contact
+      - make an contact
+      - make new contact
+      - make a new contact
+      - make an new contact
+      - generate contact
+      - generate a contact
+      - generate an contact
+      - generate new contact
+      - generate a new contact
+      - generate an new contact
+      - Make a [contact]{"entity":"tablename"} named [gokul ravindran]{"entity":"fullname"} and company [amazon]{"entity":"companyname"}
+      - Add a [contact]{"entity":"tablename"} named [bharath simha]{"entity":"fullname"} and company name [ITC]{"entity":"companyname"}
+      -Record a new [contact]{"entity":"tablename"} name [pq qe]{"entity":"fullname"} and company name [Ford Motor ]{"entity":"companyname"}   
+      -Establish a [contact]{"entity":"tablename"} name [jo shelby]{"entity":"fullname"} and company [Panasonic]{"entity":"companyname"} 
+      -Input a new [contact]{"entity":"tablename"} name [rma]{"entity":"fullname"} and company [Sony]{"entity":"companyname"}   
+      -Build a new [contact]{"entity":"tablename"} name [sai gelramler]{"entity":"fullname"} and company [Siemens]{"entity":"companyname"}  
+      -Enter a new [contact]{"entity":"tablename"} name [ross ram]{"entity":"fullname"} and company [Samsung Electronics]{"entity":"companyname"}   
+      -Set up a new [contact]{"entity":"tablename"} name [ram]{"entity":"fullname"} and company [Visa]{"entity":"companyname"}   
+      -Formulate a new [contact]{"entity":"tablename"} name [jo]{"entity":"fullname"} and company [Toyota]{"entity":"companyname"}   
+      -Create a fresh [contact]{"entity":"tablename"} name [phe]{"entity":"fullname"} and company [Electronics]{"entity":"companyname"}   
+      -Construct a new [contact]{"entity":"tablename"} name [gher]{"entity":"fullname"} and company [Johnson]{"entity":"companyname"} 
+
+      - Generate a [contact]{"entity":"tablename"}  name [yuvaraj munaga]{"entity":"fullname"} and company name [tesco]{"entity":"companyname"}
+      - Record a [contact]{"entity":"tablename"}  name [pavan reddy]{"entity":"fullname"} and company [goldman sachs]{"entity":"companyname"}
+      - Establish a [contact]{"entity":"tablename"}  name [shiva reddy]{"entity":"fullname"} and company name [wells fargo]{"entity":"companyname"}
+      - Input a [contact]{"entity":"tablename"} with name [mahesh babu]{"entity":"fullname"} and company name [meesho]{"entity":"companyname"}
+      - Build a [contact]{"entity":"tablename"} with name [rrr]{"entity":"fullname"} and company name [lenovo]{"entity":"companyname"}
+      - Enter a [contact]{"entity":"tablename"} named [ram charan]{"entity":"fullname"} and company [bpl]{"entity":"companyname"}
+      - Set up a [contact]{"entity":"tablename"} named [rajamouli]{"entity":"fullname"} and company name [vedanta]{"entity":"companyname"}
+      - Formulate a [contact]{"entity":"tablename"} with name [trivikram srinivas]{"entity":"fullname"} and company [xerox]{"entity":"companyname"}
+      - Create a [contact]{"entity":"tablename"} with name [srinivas]{"entity":"fullname"} and company name [nineleaps]{"entity":"companyname"}
+      - Construct a [contact]{"entity":"tablename"} with name [raj rao]{"entity":"fullname"} and company name [cgi]{"entity":"companyname"}
+      - Add a  [contact]{"entity":"tablename"}  name [raju]{"entity":"fullname"} and company [slack]{"entity":"companyname"}
+      - Generate a [contact]{"entity":"tablename"} with name [simon]{"entity":"fullname"} and company name [pqr llc]{"entity":"companyname"}
+      - Establish a [contact]{"entity":"tablename"} with name [christoper]{"entity":"fullname"} and company [microsoft corp]{"entity":"companyname"}
+      - Record a [contact]{"entity":"tablename"} with name [samuel]{"entity":"fullname"} and company name [google llc]{"entity":"companyname"}
+      - Input a [contact]{"entity":"tablename"} with name [dicaprio]{"entity":"fullname"} and company [zoho corp]{"entity":"companyname"}
+      - Build a [contact]{"entity":"tablename"} with title [ty burrel]{"entity":"fullname"} and company name [tech ltd]{"entity":"companyname"}
+      - Enter a [contact]{"entity":"tablename"} with title [luke]{"entity":"fullname"} and company [hp limited]{"entity":"companyname"}
+      - Create a fresh [contact]{"entity":"tablename"} with title [CLAIRE dunphy]{"entity":"fullname"} and company name [dell ltd]{"entity":"companyname"}
+      - Construct a [contact]{"entity":"tablename"} with title [alex]{"entity":"fullname"} and company [spry co]{"entity":"companyname"}
+      - Set up a [contact]{"entity":"tablename"} with title [phil]{"entity":"fullname"} and company name [apple]{"entity":"companyname"}
+      - Formulate a [contact]{"entity":"tablename"} with title [sofia ]{"entity":"fullname"} and company [samsung co]{"entity":"companyname"}
+      - Add a [contact]{"entity":"tablename"} with title [bonnie bennet]{"entity":"fullname"} and company name [Toyota]{"entity":"companyname"}
+      - Generate a [contact]{"entity":"tablename"} named [sherrif forbes]{"entity":"fullname"} and company [Nike]{"entity":"companyname"}
+      - Establish a [contact]{"entity":"tablename"} named [jenna gilbert]{"entity":"fullname"} and company name [Coca-Cola]{"entity":"companyname"}
+      - Record a [contact]{"entity":"tablename"}  name [nik kalus]{"entity":"fullname"} and company [reliance industries]{"entity":"companyname"}
+      - Input a new [contact]{"entity":"tablename"} with title [elijah mikelson]{"entity":"fullname"} and company name [facebook]{"entity":"companyname"}
+      - Build a new [contact]{"entity":"tablename"} with title [rebekha]{"entity":"fullname"} and company [IBM Corporation]{"entity":"companyname"}
+      - Enter a new [contact]{"entity":"tablename"}  name [valarie]{"entity":"fullname"} and company name [General Electric Company]{"entity":"companyname"}
+      -Generate a new [contact]{"entity":"tablename"} with company name [Nike Inc]{"entity":"companyname"} and  name [johnathan]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with company name [PepsiCo, Inc]{"entity":"companyname"} and  name [tommy shelby]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with company name [Visa Inc]{"entity":"companyname"} and  name [tommyarthur shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with company name [Procter & Gamble Co]{"entity":"companyname"} and  name [arthur]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with company name [Walmart Inc]{"entity":"companyname"} and  name [monica geller]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with  company name [Tesla]{"entity":"companyname"} and  name [ross geller]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with company name [Johnson & Johnson]{"entity":"companyname"} and  name [chandler bing]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with company name [Johnson and Johnson]{"entity":"companyname"} and  name [joey ]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with  companyname [Adidas]{"entity":"companyname"} and  name [phoebe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with company name [Starbucks]{"entity":"companyname"} and  name [gunther]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with company name [Nestle]{"entity":"companyname"} and  name [janice]{"entity":"fullname"}
+      -Add a new [contact]{"entity":"tablename"} with company name [Unilever]{"entity":"companyname"} and  name [p p]{"entity":"fullname"}
+      -Generate a new [contact]{"entity":"tablename"} with company name [Ford]{"entity":"companyname"} and  name [a a]{"entity":"fullname"}
+      -Record a new [contact]{"entity":"tablename"} with company name [Ford Motor ]{"entity":"companyname"} and  name [pq qe]{"entity":"fullname"}
+      -Establish a [contact]{"entity":"tablename"} with company [Panasonic]{"entity":"companyname"} and  name [jo shelby]{"entity":"fullname"}
+      -Input a new [contact]{"entity":"tablename"} with company [Sony]{"entity":"companyname"} and  name [rma]{"entity":"fullname"}
+      -Build a new [contact]{"entity":"tablename"} with company [Siemens]{"entity":"companyname"} and name [sai gelramler]{"entity":"fullname"}
+      -Enter a new [contact]{"entity":"tablename"} with company [Samsung Electronics]{"entity":"companyname"} and  name [ross ram]{"entity":"fullname"}
+      -Set up a new [contact]{"entity":"tablename"} with company [Visa]{"entity":"companyname"} and  name [ram]{"entity":"fullname"}
+      -Formulate a new [contact]{"entity":"tablename"} with company [Toyota]{"entity":"companyname"} and  name [jo]{"entity":"fullname"}
+      -Create a fresh [contact]{"entity":"tablename"} with company [Electronics]{"entity":"companyname"} and  name [phe]{"entity":"fullname"}
+      -Construct a new [contact]{"entity":"tablename"} with company [Johnson]{"entity":"companyname"} and company name [gher]{"entity":"fullname"}
+
 
   #verify
   - intent: create_account
     examples: |
+      - create a new account
+      - create new account
+      -create a account
+      -create an account
+      - create account
+      - create an new account
+      - make account
+      - make a account
+      - make an account
+      - make new account
+      - make a new account
+      - make an new account
+      - generate account
+      - generate a account
+      - generate an account
+      - generate new account
+      - generate a new account
+      - generate an new account
       - Establish a  [account] {"entity":"tablename"} with shipping city [New York]{"entity":"cityname"} City for company [ABC Corporation]{"entity":"companyname"}.
       - Create a  [account] {"entity":"tablename"} with company [faggag]{"entity":"companyname"} with shipping city [dayton]{"entity":"cityname"} as the location.
       - Produce a  [account] {"entity":"tablename"} with company [faggaggsdg]{"entity":"companyname"} with shipping city City [texas]{"entity":"cityname"}.
@@ -272,6 +336,25 @@ nlu:
   
   - intent: create_opportunity
     examples: |
+
+      - create a new opportunity
+      - create new opportunity
+      - create a opportunity
+      - create an opportunity
+      - create opportunity
+      - create an new opportunity
+      - make opportunity
+      - make a opportunity
+      - make an opportunity
+      - make new opportunity
+      - make a new opportunity
+      - make an new opportunity
+      - generate opportunity
+      - generate a opportunity
+      - generate an opportunity
+      - generate new opportunity
+      - generate a new opportunity
+      - generate an new opportunity
       - I want to create a [opportunity] {"entity":"tablename"} with the name [ProjectX]{"entity":"opportunityname"} on closing date [2023-05-01]{"entity":"closedate"} with stage [prospecting] {"entity":"stage"} 
       - Can you help me create a new [opportunity] {"entity":"tablename"} called [ProjectY]{"entity":"opportunityname"} closing date on [2023-04-18](date) 
       - Please create a [opportunity] {"entity":"tablename"} named [ProjectZ]{"entity":"opportunityname"} with closing on [2023-07-15]{"entity":"closedate"} with stage [prospecting] {"entity":"stage"} 
@@ -537,6 +620,23 @@ nlu:
       - modify the email of the contact named [firstname] {"entity":"first_name"} to [ajay@hottmail.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
       - set the email of the contact named [firstname] {"entity":"first_name"} in the [contact] {"entity":"tablename"} table to [xyz@gmail.com] {"entity":"email"}
       - set the email of the contact named [firstname] {"entity":"first_name"} to [akarsh@outlook.com] {"entity":"email"} in the [contact] {"entity":"tablename"} table
+
+
+  - intent: create
+    examples: | 
+      - create
+      - create a
+      - create an
+      - make
+      - make a
+      - make an
+      - create a new
+      - create an new 
+      - make a new
+      - make an new 
+      - generate 
+      - generate a
+      - generate a new
 
 # - intent: goodbye
 #   examples: |

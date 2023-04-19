@@ -12,6 +12,8 @@ pipeline:
   - name: "CRFEntityExtractor"
   - name: "EntitySynonymMapper"
   - name: "SklearnIntentClassifier"
+  - name: "FallbackClassifier"
+    threshold: 0.7
 
 
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
